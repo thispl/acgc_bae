@@ -224,14 +224,25 @@ export default {
 
       selectedEmployee: "Riyaz",
       selectedSite: "PS10",
-      selectedMonth: "January",
-      selectedYear: "2025",
+      selectedMonth: "",
+      selectedYear: "",
       gridKey: 0,
       
     };
   },
 
-   methods: {
+  created() {
+    const now = new Date();
+    now.setMonth(now.getMonth() - 1); // shows the previous month
+    const currentMonthIndex = now.getMonth();
+    const currentYearValue = now.getFullYear();
+
+    this.selectedMonth = this.months[currentMonthIndex].name;
+    this.selectedYear = currentYearValue.toString();
+    this.applyFilter();
+  },
+
+    methods: {
     
 
 

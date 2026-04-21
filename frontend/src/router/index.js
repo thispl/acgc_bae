@@ -21,7 +21,7 @@ const routes = [
     children: [
       {
         path: '',
-        redirect: 'maintenance'
+        redirect: 'management'
       },
       {
         path: 'management',

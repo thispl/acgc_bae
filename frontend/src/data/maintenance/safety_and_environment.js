@@ -1048,4 +1048,732 @@ export default [
   }]
 
 },
+{
+
+     meta: {
+    year: 2026,
+    month: "February",
+    site: 'PS10'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+  applicable: [
+    17, 25, 14, 12, 7, 9, 18, 13, 20, 12, 20, 4, 25, 20, 29, 17, 14, 12, 9, 9, 11, 19, 14, 12, 13, 375
+
+  ],
+  actual: [
+    17, 25, 14, 12, 7, 9, 18, 13, 20, 12, 20, 4, 25, 20, 29, 17, 14, 12, 9, 9, 11, 19, 14, 12, 13, 375
+
+  ],
+  percentage: [
+  100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
+
+  ],
+
+    totals: {
+    applicable: 375,
+    actual: 375,
+    percentage:"100%"
+  }
+
+  }]
+
+},
+  {
+
+     meta: {
+    year: 2026,
+    month: "February",
+    site: 'PS03'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+  applicable: [
+    17, 22, 14, 12, 7, 9, 18, 13, 20, 0, 12, 4, 25, 20, 24, 14, 11, 9, 9, 9, 11, 19, 14, 12, 0, 325
+
+
+  ],
+  actual: [
+    17, 22, 14, 12, 7, 9, 18, 13, 20, 0, 12, 4, 25, 20, 24, 14, 11, 9, 9, 9, 11, 19, 14, 8, 0, 321
+
+  ],
+  percentage: [
+  100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,67,100,99
+
+  ],
+
+    totals: {
+    applicable: 325,
+    actual: 321,
+    percentage:"99%"
+  }
+
+  }]
+
+},
+  {
+
+     meta: {
+    year: 2026,
+    month: "February",
+    site: 'PS06'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+  applicable: [
+    17, 22, 14, 12, 7, 9, 18, 13, 20, 0, 0, 4, 25, 20, 0, 17, 0, 0, 9, 9, 11, 19, 14, 0, 0, 260
+
+  ],
+  actual: [
+    17, 22, 14, 12, 7, 9, 18, 13, 20, 0, 0, 4, 25, 20, 0, 17, 0, 0, 9, 9, 11, 19, 14, 0, 0, 260
+
+  ],
+  percentage: [
+  100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
+
+
+  ],
+
+    totals: {
+    applicable: 260,
+    actual: 260,
+    percentage:"100%"
+  }
+
+  }]
+
+},
+  {
+
+     meta: {
+    year: 2026,
+    month: "February",
+    site: 'PS01'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+  applicable: [
+    17, 19, 14, 12, 7, 9, 18, 13, 20, 0,
+  0, 4, 25, 20, 21, 12, 11, 9, 9, 9,
+  9, 19, 14, 0, 0, 291 
+  ],
+  actual: [
+    17, 19, 14, 12, 7, 9, 18, 13, 20, 0, 0, 4, 25, 20, 21, 12, 11, 9, 9, 9, 9, 19, 14, 0, 0, 287
+
+
+  ],
+  percentage: [
+  100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
+
+
+  ],
+
+    totals: {
+    applicable: 291,
+    actual: 287,
+    percentage:"100%"
+  }
+
+  }]
+
+},
+  {
+
+     meta: {
+    year: 2026,
+    month: "February",
+    site: 'PRS1'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+  applicable: [
+    13, 14, 12, 10, 4, 4, 18, 10, 13, 0,
+  10, 4, 21, 15, 20, 0, 0, 0, 9, 6,
+  3, 0, 4, 10, 0, 200
+  ],
+  actual: [
+    , 13, 14, 12, 10, 4, 4, 18, 10, 13, 0,
+  10, 4, 21, 15, 20, 0, 0, 0, 9, 6,
+  3, 0, 4, 10, 0, 200
+  ],
+  percentage: [
+ 100, 100, 100, 100, 100, 0, 100, 100, 100, 0,
+  0, 100, 100, 100, 100, 0, 0, 0, 100, 100,
+  100, 0, 100, 100, 0, 100
+
+  ],
+
+    totals: {
+    applicable: 200,
+    actual: 200,
+    percentage:"100%"
+  }
+
+  }]
+
+},
+  {
+
+     meta: {
+    year: 2026,
+    month: "February",
+    site: 'PS05'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+  applicable: [
+   17, 22, 14, 12, 7, 9, 18, 13, 20, 12, 10, 4, 25, 18, 0, 0, 0, 9, 9, 9, 11, 0, 14, 12, 0, 265
+
+  ],
+  actual: [ 
+    17, 16, 14, 12, 7, 9, 16, 13, 20, 12, 10, 4, 25, 18, 0, 0, 0, 9, 9, 9, 11, 0, 14, 12, 0, 257
+
+  ],
+  percentage: [
+   100, 73, 100, 100, 100, 100, 89, 100, 100, 100,
+    100, 100, 100, 100, 0, 0, 0, 100, 100, 100,
+    100, 0, 100, 100, 0, 97
+  ],
+
+    totals: {
+    applicable: 265,
+    actual: 257,
+    percentage:"97%"  
+  }
+
+  }]
+
+},
+{
+
+     meta: {
+    year: 2026,
+    month: "March",
+    site: 'PS10'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+  applicable: [
+    17, 25, 14, 12, 7, 9, 18, 13, 20, 12, 20, 4, 25, 20, 29, 17, 14, 12, 9, 9, 11, 19, 14, 12, 13, 375
+
+  ],
+  actual: [
+    17, 25, 14, 12, 7, 9, 18, 13, 20, 12, 20, 4, 25, 20, 29, 17, 14, 12, 9, 9, 11, 19, 14, 12, 13, 375
+
+  ],
+  percentage: [
+  100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
+
+  ],
+
+    totals: {
+    applicable: 375,
+    actual: 375,
+    percentage:"100%"
+  }
+
+  }]
+
+},
+  {
+
+     meta: {
+    year: 2026,
+    month: "March",
+    site: 'PS03'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+  applicable: [
+    17, 22, 14, 12, 7, 9, 18, 13, 20, 0, 12, 4, 25, 20, 24, 14, 11, 9, 9, 9, 11, 19, 14, 12, 0, 325
+
+
+  ],
+  actual: [
+    17, 22, 14, 12, 7, 9, 18, 13, 20, 0, 12, 4, 25, 20, 24, 14, 11, 9, 9, 9, 11, 19, 14, 8, 0, 321
+
+  ],
+  percentage: [
+  100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,67,100,99
+
+  ],
+
+    totals: {
+    applicable: 325,
+    actual: 321,
+    percentage:"99%"
+  }
+
+  }]
+
+},
+  {
+
+     meta: {
+    year: 2026,
+    month: "March",
+    site: 'PS06'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+  applicable: [
+    17, 22, 14, 12, 7, 9, 18, 13, 20, 0, 0, 4, 25, 20, 0, 17, 0, 0, 9, 9, 11, 19, 14, 0, 0, 260
+
+  ],
+  actual: [
+    17, 22, 14, 12, 7, 9, 18, 13, 20, 0, 0, 4, 25, 20, 0, 17, 0, 0, 9, 9, 11, 19, 14, 0, 0, 260
+
+  ],
+  percentage: [
+  100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
+
+
+  ],
+
+    totals: {
+    applicable: 260,
+    actual: 260,
+    percentage:"100%"
+  }
+
+  }]
+
+},
+  {
+
+     meta: {
+    year: 2026,
+    month: "March",
+    site: 'PS01'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+  applicable: [
+    17, 19, 14, 12, 7, 9, 18, 13, 20, 0,
+  0, 4, 25, 20, 21, 12, 11, 9, 9, 9,
+  9, 19, 14, 0, 0, 291 
+  ],
+  actual: [
+    17, 19, 14, 12, 7, 9, 18, 13, 20, 0,
+  0, 4, 25, 20, 21, 12, 11, 9, 9, 9,
+  9, 19, 14, 0, 0, 291 
+  ],
+  percentage: [
+  100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100,100
+
+
+  ],
+
+    totals: {
+    applicable: 291,
+    actual: 291,
+    percentage:"100%"
+  }
+
+  }]
+
+},
+  {
+
+     meta: {
+    year: 2026,
+    month: "March",
+    site: 'PRS1'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+   applicable: [
+    12, 17, 11, 12, 5, 2, 18, 10, 15, 0,
+    0, 3, 22, 18, 0, 0, 0, 0, 7, 7,
+    5, 0, 0, 0, 0, 164
+  ],
+
+  actual: [
+    12, 17, 11, 12, 5, 2, 18, 10, 15, 0,
+    0, 3, 22, 18, 0, 0, 0, 0, 7, 7,
+    5, 0, 0, 0, 0, 164
+  ],
+ percentage: [
+    100, 100, 100, 100, 100, 0, 100, 100, 100, 0,
+    0, 100, 100, 100, 0, 0, 0, 0, 100, 100,
+    100, 0, 0, 0, 0, 100
+  ],
+
+   totals: {
+    applicable: 164,
+    actual: 164,
+    percentage: "100%"
+  }
+
+  }]
+
+},
+  {
+
+     meta: {
+    year: 2026,
+    month: "March",
+    site: 'PS05'
+  }, 
+
+    records:[{
+  categories: [
+    "Programme Administration",
+    "Personal Protective Equipment",
+    "Orderliness/Housekeeping",
+    "Workshop, Storage Shed and Office",
+    "Material Storage",
+    "Environment",
+    "Fire Prevention",
+    "Fire Protection",
+    "Electrical Installations",
+    "Openings & Pits",
+    "Excavations",
+    "Hand Tools (Manual)",
+    "Hand Tools (Powered)",
+    "Portable Ladders",
+    "Scaffolding",
+    "Hoists and Cranes",
+    "Rigging",
+    "Heavy (Earth)Moving/Handling Equipment",
+    "Motor Vehicles",
+    "Chemical Hazards",
+    "Flammable Liquids",
+    "Compressed Gas Cylinders",
+    "Welding and Cutting",
+    "Work in Confined/Enclosed Space",
+    "Demolitions / Dismantlings",
+    "Overall Score & Percentage"
+  ],
+  applicable: [
+   17, 22, 14, 12, 7, 9, 18, 13, 20, 12, 10, 4, 25, 18, 0, 0, 0, 9, 9, 9, 11, 0, 14, 12, 0, 265
+
+  ],
+  actual: [ 
+    17, 16, 14, 12, 7, 9, 16, 13, 20, 12, 10, 4, 25, 18, 0, 0, 0, 9, 9, 9, 11, 0, 14, 12, 0, 257
+
+  ],
+  percentage: [
+   100, 73, 100, 100, 100, 100, 89, 100, 100, 100,
+    100, 100, 100, 100, 0, 0, 0, 100, 100, 100,
+    100, 0, 100, 100, 0, 97
+  ],
+
+    totals: {
+    applicable: 265,
+    actual: 257,
+    percentage:"97%"  
+  }
+
+  }]
+
+},
 ]

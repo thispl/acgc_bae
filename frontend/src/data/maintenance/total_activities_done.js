@@ -284,5 +284,205 @@ export default [
       
     ]
   },
+{
+    meta: {
+      year: 2026,
+      month: "February",
+      site: "PS10"
+    },
+    records: [
+      { label: 'Electrical Works', value: 16 },
+      { label: 'HVAC', value: 1 },
+      { label: 'C3', value: 4},
+      { label: 'Civil', value: 28 },
+      { label: 'Mechanical', value: 45 },
+      { label: 'Housekeeping', value: 20 }
+    ]
+  },
+  {
+    meta: {
+      year: 2026,
+      month: "February",
+      site: "PS06"
+    },
+    records: [
+      { label: 'Civil', value: 16 },  
+      { label: 'Electrical Works', value: 3 },
+      { label: 'F-FCM', value: 29     },
+      { label: 'G-General', value: 0     },
+      { label: 'H-HVAC', value: 1     },
+      { label: 'J-C3', value: 0 },
+      { label: 'M-Mechanical', value: 3 },
+      
+    ]
+  },
+  {
+    meta: {
+      year: 2026,
+      month: "February",
+      site: "PS03"
+    },
+    records: [
+      
+      { label: 'Electrical Works', value: 667 },
+       { label: 'HVAC', value: 1394 },
+       { label: 'Civil', value: 78 },  
+       { label: 'J-C3', value: 1351 },
+        { label: 'M-Mechanical', value: 1298 },
+      { label: 'F-FCM', value: 1254     },
+      { label: 'A-Architectural', value: 14     },
+     
+      
+     
+      
+    ]
+  },
+  {
+    meta: {
+      year: 2026,
+      month: "February",
+      site: "PS01"
+       },
+       records: [
+  { label: "C-Civil", value: 2 },
+  { label: "E-Electrical", value: 4 },
+  { label: "F-FCM", value: 0 },
+  { label: "G-General", value: 3 },
+  { label: "J-C3", value: 1 },
+  { label: "M-Mechanical", value: 3 }
+]
+  },
+{
+    meta: {
+      year: 2026,
+      month: "February",
+      site: "PRS1"
+    },
+    records: [
+  { label: "C-Civil", value: 7 },
+  { label: "E-Electrical", value: 12 },
+  { label: "F-FCM", value: 1 },
+  { label: "H-HVAC", value: 26 },
+  { label: "J-C3", value: 1 },
+  { label: "M-Mechanical", value: 21 }
+]
 
+  },
+
+  {
+    meta: {
+      year: 2026,
+      month: "February",
+      site: "PS05"
+    },
+    records: [
+     
+      { label: 'Electrical Works', value: 258 },
+       { label: 'HVAC', value: 421 },
+       
+      
+      
+     
+      
+     
+      
+    ]
+  },
+  {
+    meta: {
+      year: 2026,
+      month: "March",
+      site: "PS10"
+    },
+    records: [
+      { label: 'Electrical Works', value: 13 },
+      { label: 'HVAC', value: 6 },
+      { label: 'C3', value: 14},
+      { label: 'Civil', value: 27},
+      { label: 'Mechanical', value: 28 },
+      { label: 'Housekeeping', value: 42 }
+    ]
+  },
+  {
+    meta: {
+      year: 2026,
+      month: "March",
+      site: "PS06"
+    },
+    records: [
+  { label: "Civil", value: 7 },
+  { label: "Electrical Works", value: 5 },
+  { label: "F-FCM", value: 11 },
+  { label: "G-General", value: 0 },
+  { label: "H-HVAC", value: 0 },
+  { label: "J-C3", value: 1 },
+  { label: "M-Mechanical", value: 3 }
+]
+  },
+  {
+    meta: {
+      year: 2026,
+      month: "March",
+      site: "PS03"
+    },
+    records: [
+  { label: "Electrical Works", value: 573 },
+  { label: "H-HVAC", value: 1063 },
+  { label: "Civil", value: 75 },
+  { label: "J-C3", value: 1298 },
+  { label: "M-Mechanical", value: 694 },
+  { label: "F-FCM", value: 1166 },
+  { label: "A-Architectural", value: 90 }
+]
+  },
+//   {
+//     meta: {
+//       year: 2026,
+//       month: "March",
+//       site: "PS01"
+//        },
+//        records: [
+//   { label: "C-Civil", value: 2 },
+//   { label: "E-Electrical", value: 4 },
+//   { label: "F-FCM", value: 0 },
+//   { label: "G-General", value: 3 },
+//   { label: "J-C3", value: 1 },
+//   { label: "M-Mechanical", value: 3 }
+// ]
+//   },
+{
+    meta: {
+      year: 2026,
+      month: "March",
+      site: "PRS1"
+    },
+    records: [
+  { label: "Civil", value: 10 },
+  { label: "Electrical Works", value: 13 },
+  { label: "H-HVAC", value: 11 },
+  { label: "J-C3", value: 8 },
+  { label: "M-Mechanical", value: 16 }
+]
+
+  },
+
+  {
+    meta: {
+      year: 2026,
+      month: "March",
+      site: "PS05"
+    },
+    records: [
+     
+      { label: 'Electrical Works', value: 265 },
+       { label: 'HVAC', value: 343 },
+       
+      
+      
+     
+      
+     
+      
+    ]
+  },
 ];
