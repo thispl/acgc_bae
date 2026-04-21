@@ -2,7 +2,7 @@
 	<!-- Tabs Section -->
 	<div class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-auto items-center">
 		<button
-			@click="activeTab = 'Organisation Chart'"
+			@click="handleChildClick('Organisation Chart')"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
 			:class="{
 				'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Organisation Chart',
@@ -14,7 +14,7 @@
 		<p>|</p>
 
 		<button
-			@click="activeTab = 'Total Activities Done'"
+			@click="handleChildClick('Total Activities Done')"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
 			:class="{
 				'border-b-2 border-b-[#fba800] bg-[#fefdec]':
@@ -27,7 +27,7 @@
 		<p>|</p>
 
 		<button
-			@click="activeTab = 'Maintenance'"
+			@click="handleChildClick('Maintenance')"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
 			:class="{ 'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Maintenance' }"
 		>
@@ -35,7 +35,7 @@
 		</button>
 		<p>|</p>
 		<button
-			@click="activeTab = 'HR'"
+			@click="handleChildClick('HR')"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
 			:class="{ 'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'HR' }"
 		>
@@ -44,9 +44,9 @@
 		<p>|</p>
 
 		<button
-			@click="activeTab = 'safety'"
+			@click="handleChildClick('Safety')"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
-			:class="{ 'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'safety' }"
+			:class="{ 'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Safety' }"
 		>
 			SHE
 		</button>
@@ -54,7 +54,7 @@
 		<p>|</p>
 
 		<button
-			@click="activeTab = 'Operations'"
+			@click="handleChildClick('Operations')"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
 			:class="{ 'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Operations' }"
 		>
@@ -583,7 +583,75 @@ export default {
 			garbageCollectionData,
 			waterConsumption,
 			OrganisationChartData,
+			tabs: [
+				'Organisation Chart',
+				'Total Activities Done',
+				'Maintenance',
+				'HR',
+				'Safety',
+				'Operations'
+			],
+			childTabIndex: 0,
+			childIntervalId: null,
+			resumeTimeoutId: null,
 		};
 	},
+	mounted() {
+  this.startChildRotation();
+},
+
+watch: {
+  '$route.path'() {
+    this.childTabIndex = 0;
+    this.activeTab = this.tabs[0];
+    this.startChildRotation();
+  }
+},
+
+  methods: {
+    startChildRotation() {
+  if (this.childIntervalId) {
+    clearInterval(this.childIntervalId);
+  }
+
+  this.childIntervalId = setInterval(() => {
+    this.childTabIndex++;
+
+    if (this.childTabIndex >= this.tabs.length) {
+      this.childTabIndex = 0;
+
+      // 👇 FULL CYCLE COMPLETED
+      this.$emit('child-cycle-complete');
+    }
+
+    this.activeTab = this.tabs[this.childTabIndex];
+
+  }, 5000);
+},
+    handleChildClick(tab) {
+  // stop current rotation
+  if (this.childIntervalId) {
+    clearInterval(this.childIntervalId);
+  }
+
+  // sync index (VERY important)
+  const index = this.tabs.indexOf(tab);
+  if (index !== -1) {
+    this.childTabIndex = index;
+  }
+
+  this.activeTab = tab;
+
+  // clear previous resume timer (avoid stacking madness)
+  if (this.resumeTimeoutId) {
+    clearTimeout(this.resumeTimeoutId);
+  }
+
+  // resume after idle time
+  this.resumeTimeoutId = setTimeout(() => {
+    this.startChildRotation();
+  }, 10000); // 10 sec (change if you want)
+}
+  }
 };
 </script>

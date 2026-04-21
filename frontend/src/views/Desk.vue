@@ -2,7 +2,12 @@
   <!-- Header Section -->
   <div class="bg-white flex p-5 items-center">
     <div class="flex flex-row">
-     <img src="../assets/icons/ACGC LOGO FULL NAME.png" class="h-10" /><span><h1 class="font-semibold text-2xl ml-[20px] mt-[5px]">Monthly Progress Observation and Analysis - {{ this.selectedMonth }} {{this.selectedYear}}</h1></span>
+      <img src="../assets/icons/ACGC LOGO FULL NAME.png" class="h-10" /><span
+        ><h1 class="font-semibold text-2xl ml-[20px] mt-[5px]">
+          Monthly Progress Observation and Analysis - {{ this.selectedMonth }}
+          {{this.selectedYear}}
+        </h1></span
+      >
     </div>
 
     <!-- Filter Section -->
@@ -14,38 +19,38 @@
       <!-- Project -->
       <!-- <input placeholder="Project" class="border border-gray-300 rounded-md px-3 py-1 text-sm"></input> -->
 
-       <!-- Month -->
-      <select v-model="selectedMonth" class="border border-gray-300 rounded-md px-2 py-1 text-sm w-30">
+      <!-- Month -->
+      <select
+        v-model="selectedMonth"
+        class="border border-gray-300 rounded-md px-2 py-1 text-sm w-30"
+      >
         <option value="" disabled>Select an Month</option>
-        <option
-            v-for="month in months" :key="month.id" :value="month.name"
-        >
-            {{ month.name }}
+        <option v-for="month in months" :key="month.id" :value="month.name">
+          {{ month.name }}
         </option>
       </select>
 
-       <!-- Year -->
-      <select v-model="selectedYear" class="border border-gray-300 rounded-md px-2 py-1 text-sm w-20">
+      <!-- Year -->
+      <select
+        v-model="selectedYear"
+        class="border border-gray-300 rounded-md px-2 py-1 text-sm w-20"
+      >
         <option value="" disabled>Select an Year</option>
-        <option
-            v-for="year in years" :key="year.id" :value="year.name"
-        >
-            {{ year.name }}
+        <option v-for="year in years" :key="year.id" :value="year.name">
+          {{ year.name }}
         </option>
       </select>
-
 
       <!-- Site -->
-      <select v-model="selectedSite" class="border border-gray-300 rounded-md px-2 py-1 text-sm w-20">
+      <select
+        v-model="selectedSite"
+        class="border border-gray-300 rounded-md px-2 py-1 text-sm w-20"
+      >
         <option value="" disabled>Select an Site</option>
-        <option
-            v-for="site in sites" :key="site.id" :value="site.name"
-        >
-            {{ site.name }}
+        <option v-for="site in sites" :key="site.id" :value="site.name">
+          {{ site.name }}
         </option>
       </select>
-
-   
 
       <!-- Employee -->
       <!-- <select v-model="selectedEmployee" class="border border-gray-300 rounded-md px-3 py-1 text-sm w-20">
@@ -57,65 +62,127 @@
         </option>
       </select> -->
 
-      <button type="button" @click="applyFilter()" class="bg-black text-white rounded-md px-5 py-1.5 text-sm">Filter</button>
+      <button
+        type="button"
+        @click="applyFilter()"
+        class="bg-black text-white rounded-md px-5 py-1.5 text-sm"
+      >
+        Filter
+      </button>
     </div>
   </div>
   <!-- Tabs Section -->
   <div class="grid grid-cols-12 gap-5 mt-5" :key="gridKey">
-    <div class="bg-white col-span-3 p-5 ">
-        <h1 class="text-gray-400 font-medium">Departments</h1>
-        <div>
-            <!-- Management Button -->
-            <router-link to="/management" @click="activeDepartment='management'" class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-            active-class="border border-[#fba800] bg-[#fefdec]">
-                Management & Overview
-                <span class="ml-auto flex items-center">
-                    <svg class="h-4 w-4 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <polyline points="7 7 12 12 7 17" />
-                        <polyline points="13 7 18 12 13 17" />
-                    </svg>
-                </span>
-            </router-link>
-            <!-- Maintenance Button -->
-            <router-link to="/maintenance" @click="activeDepartment='maintenance'" class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-            active-class="border border-[#fba800] bg-[#fefdec]">
-                Maintenance
-                <span class="ml-auto flex items-center">
-                    <svg class="h-4 w-4 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <polyline points="7 7 12 12 7 17" />
-                        <polyline points="13 7 18 12 13 17" />
-                    </svg>
-                </span>
-            </router-link>
-            <!-- HR Button -->
-            <router-link to="/hr" @click="activeDepartment='hr'" class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-            active-class="border border-[#fba800] bg-[#fefdec]">
-                HR
-                <span class="ml-auto flex items-center">
-                    <svg class="h-4 w-4 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <polyline points="7 7 12 12 7 17" />
-                        <polyline points="13 7 18 12 13 17" />
-                    </svg>
-                </span>
-            </router-link>
-            <!-- Safety, health & Environment Button -->
-            <router-link to="/safety" @click="activeDepartment='safety'" class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-            active-class="border border-[#fba800] bg-[#fefdec]">
-                Safety, health & Environment
-                <span class="ml-auto flex items-center">
-                    <svg class="h-4 w-4 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <polyline points="7 7 12 12 7 17" />
-                        <polyline points="13 7 18 12 13 17" />
-                    </svg>
-                </span>
-            </router-link>
+    <div class="bg-white col-span-3 p-5">
+      <h1 class="text-gray-400 font-medium">Departments</h1>
+      <div>
+        <!-- Management Button -->
+        <router-link
+          to="/management"
+          @click="handleManualClick('management', '/management')"
+          class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
+          active-class="border border-[#fba800] bg-[#fefdec]"
+        >
+          Management & Overview
+          <span class="ml-auto flex items-center">
+            <svg
+              class="h-4 w-4 text-gray-500"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <polyline points="7 7 12 12 7 17" />
+              <polyline points="13 7 18 12 13 17" />
+            </svg>
+          </span>
+        </router-link>
+        <!-- Maintenance Button -->
+        <router-link
+          to="/maintenance"
+          @click="handleManualClick('maintenance', '/maintenance')"
+          class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
+          active-class="border border-[#fba800] bg-[#fefdec]"
+        >
+          Maintenance
+          <span class="ml-auto flex items-center">
+            <svg
+              class="h-4 w-4 text-gray-500"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <polyline points="7 7 12 12 7 17" />
+              <polyline points="13 7 18 12 13 17" />
+            </svg>
+          </span>
+        </router-link>
+        <!-- HR Button -->
+        <router-link
+          to="/hr"
+          @click="handleManualClick('hr', '/hr')"
+          class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
+          active-class="border border-[#fba800] bg-[#fefdec]"
+        >
+          HR
+          <span class="ml-auto flex items-center">
+            <svg
+              class="h-4 w-4 text-gray-500"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <polyline points="7 7 12 12 7 17" />
+              <polyline points="13 7 18 12 13 17" />
+            </svg>
+          </span>
+        </router-link>
+        <!-- Safety, health & Environment Button -->
+        <router-link
+          to="/safety"
+          @click="handleManualClick('safety', '/safety')"
+          class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
+          active-class="border border-[#fba800] bg-[#fefdec]"
+        >
+          Safety, health & Environment
+          <span class="ml-auto flex items-center">
+            <svg
+              class="h-4 w-4 text-gray-500"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <polyline points="7 7 12 12 7 17" />
+              <polyline points="13 7 18 12 13 17" />
+            </svg>
+          </span>
+        </router-link>
 
-            <!-- Warehouse & Procurement Button -->
-            <!-- <router-link to="/warehouse" @click="activeDepartment='warehouse'" class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
+        <!-- Warehouse & Procurement Button -->
+        <!-- <router-link to="/warehouse" @click="handleManualClick('warehouse', '/warehouse')" class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
             active-class="border border-[#fba800] bg-[#fefdec]">
                 Warehouse & Procurement
                 <span class="ml-auto flex items-center">
@@ -127,9 +194,8 @@
                 </span>
             </router-link> -->
 
-
-            <!-- Customer SLA Button -->
-            <!-- <router-link to="/customer-sla" @click="activeDepartment='customer'" class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
+        <!-- Customer SLA Button -->
+        <!-- <router-link to="/customer-sla" @click="handleManualClick('customer', '/customer')" class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
             active-class="border border-[#fba800] bg-[#fefdec]">
                 Customer SLA
                 <span class="ml-auto flex items-center">
@@ -141,29 +207,39 @@
                 </span>
             </router-link> -->
 
-            <!-- Operations Button -->
-            <router-link to="/operations" @click="activeDepartment='operations'" class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-            active-class="border border-[#fba800] bg-[#fefdec]">
-                Operations
-                <span class="ml-auto flex items-center">
-                    <svg class="h-4 w-4 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" />
-                        <polyline points="7 7 12 12 7 17" />
-                        <polyline points="13 7 18 12 13 17" />
-                    </svg>
-                </span>
-            </router-link>
-        </div>
+        <!-- Operations Button -->
+        <router-link
+          to="/operations"
+          @click="handleManualClick('operations', '/operations')"
+          class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
+          active-class="border border-[#fba800] bg-[#fefdec]"
+        >
+          Operations
+          <span class="ml-auto flex items-center">
+            <svg
+              class="h-4 w-4 text-gray-500"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <polyline points="7 7 12 12 7 17" />
+              <polyline points="13 7 18 12 13 17" />
+            </svg>
+          </span>
+        </router-link>
+      </div>
     </div>
     <div class="col-span-9">
-        <router-view />
+      <router-view @child-cycle-complete="handleChildCycleComplete" />
     </div>
-
-    
-</div>
-<!-- <div class="w-full" style="color:#666666; text-align:end;"><p>Powered by <b style='color:#211a4b;'>TEAMPRO</b></p></div> -->
-
-
+  </div>
+  <!-- <div class="w-full" style="color:#666666; text-align:end;"><p>Powered by <b style='color:#211a4b;'>TEAMPRO</b></p></div> -->
 </template>
 
 <script>
@@ -171,7 +247,7 @@ import { useFilterStore } from '@/stores/filterStore';
 import { useFilterOrgChartStore } from '@/stores/filterOrgChartStore';
 
 export default {
-    
+
 
   data() {
     return {
@@ -187,7 +263,7 @@ export default {
         { id: "PS01", name: "PS01" },
         { id: "PRS1", name: "PRS1" },
         { id: "PS05", name: "PS05" },
-       
+
       ],
 
       months:[
@@ -206,7 +282,7 @@ export default {
       ],
 
       years:[
-     
+
       {id:2021 , name:"2021"},
       {id:2022 , name:"2022"},
       {id:2023 , name:"2023"},
@@ -227,7 +303,20 @@ export default {
       selectedMonth: "",
       selectedYear: "",
       gridKey: 0,
-      
+
+      departments: [
+      { name: "management", route: "/management" },
+      { name: "maintenance", route: "/maintenance" },
+      { name: "hr", route: "/hr" },
+      { name: "safety", route: "/safety" },
+      { name: "operations", route: "/operations" }
+    ],
+
+    currentTabIndex: 0,
+    isAutoRotateStopped: false,
+    activeDepartment: "management",
+    resumeTimeoutId: null,
+
     };
   },
 
@@ -243,13 +332,13 @@ export default {
   },
 
     methods: {
-    
+
 
 
       applyFilter() {
-      const filterStore = useFilterStore();  
+      const filterStore = useFilterStore();
 
-      const filterorgchartStore = useFilterOrgChartStore();  
+      const filterorgchartStore = useFilterOrgChartStore();
 
       filterStore.setFilters({
         year: Number(this.selectedYear),
@@ -261,13 +350,46 @@ export default {
         site:this.selectedSite
       })
 
-     
-
-      this.gridKey++; 
-     
-    }
 
 
+      this.gridKey++;
+
+    },
+
+    handleManualClick(dept, route) {
+  this.isAutoRotateStopped = true;
+
+  const index = this.departments.findIndex(d => d.route === route);
+  if (index !== -1) {
+    this.currentTabIndex = index;
+  }
+
+  this.activeDepartment = dept;
+  this.$router.push(route);
+
+  if (this.resumeTimeoutId) {
+    clearTimeout(this.resumeTimeoutId);
+  }
+
+  this.resumeTimeoutId = setTimeout(() => {
+    this.isAutoRotateStopped = false;
+  }, 10000);
+},
+
+    handleChildCycleComplete() {
+  if (this.isAutoRotateStopped) return;
+
+  this.currentTabIndex++;
+
+  if (this.currentTabIndex >= this.departments.length) {
+    this.currentTabIndex = 0;
+  }
+
+  const current = this.departments[this.currentTabIndex];
+
+  this.activeDepartment = current.name;
+  this.$router.push(current.route);
+}
 
 
 
@@ -278,7 +400,7 @@ export default {
 </script>
 
 <style scoped>
-    option {
-        width: 10px;
-    }
+option {
+  width: 10px;
+}
 </style>

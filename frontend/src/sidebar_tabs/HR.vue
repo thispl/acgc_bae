@@ -1,184 +1,175 @@
 <template>
   <!-- Tabs -->
-  <div class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-auto items-center">
-
-    <button @click="activeTab='Saudization'" class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
-      :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Saudization' }">
+  <div
+    class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-auto items-center"
+  >
+    <button
+      @click="handleChildClick('Saudization')"
+      class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
+      :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Saudization' }"
+    >
       Saudization
-    </button @click="activeTab">
+    </button>
 
-     <p>|</p>
-
-    <button @click="activeTab='Management KPI'" class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
-      :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Management KPI' }">
-      Management KPI
-    </button @click="activeTab">
     <p>|</p>
-    <button @click="activeTab='Man Power Trends'" class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
-      :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Man Power Trends' }">
+
+    <button
+      @click="handleChildClick('Management KPI')"
+      class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
+      :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Management KPI' }"
+    >
+      Management KPI
+    </button>
+    <p>|</p>
+    <button
+      @click="handleChildClick('Man Power Trends')"
+      class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
+      :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Man Power Trends' }"
+    >
       Man Power
-    </button @click="activeTab">
-   
-    
+    </button>
   </div>
   <!-- Charts -->
 
-<div class="mt-4 bg-white">
-   <!-- Saudization -->
-  <div v-if="activeTab =='Saudization'" style="background-color: white;" >
+  <div class="mt-4 bg-white">
+    <!-- Saudization -->
+    <div v-if="activeTab =='Saudization'" style="background-color: white">
+      <!-- Total Manpower vs Saudi National -->
 
-
-
-    <!-- Total Manpower vs Saudi National -->
-
-         <div>
-            <div>
-                <h1 class="text-3xl font-semibold text-center mb-3 mt-5 pt-5">Total Manpower vs Saudi National</h1>
-                       
-            </div>
-
-            <div v-if="manpowerSaudiNationalDataFiltered.length" class="flex gap-5 justify-center">
-                <div  class="flex flex-col gap-4  w-full">
-                    <SemiCircleGauge
-                      :total="manpowerSaudiNationalDataFiltered[0].total_sum"
-                      :saudi="manpowerSaudiNationalDataFiltered[0].nationals_sum"
-                    />
-                </div>
-                
-            </div>
-
-            <div v-if="manpowerSaudiNationalDataFiltered.length" class="flex gap-5 justify-center">
-                <div  class="flex flex-col gap-4  w-full">
-                    <RadialGauge :chartData="manpowerSaudiNationalDataFiltered"  />
-                </div>
-                
-            </div>
-            <div v-else class="text-center mt-5 text-gray-500">
-                    No data available for selected filters.
-                </div>
-
-
-            
+      <div>
+        <div>
+          <h1 class="text-3xl font-semibold text-center mb-3 mt-5 pt-5">
+            Total Manpower vs Saudi National
+          </h1>
         </div>
 
-
-  </div>
-
-
-  <!-- Management KPI -->
-
-   <div v-if="activeTab =='Management KPI'" style="background-color: white;" >
-
-     <!-- KPI Performance Measure -->
-
-         <div>
-            <div>
-                <h1 class="text-3xl font-semibold text-center mb-3 mt-5 pt-5">KPI Performance Measure</h1>
-                
-                
-            </div>
-
-            <div v-if="kpiPerformanceMeasureFiltered.length" class="flex gap-5 justify-center">
-                <div  class="flex flex-col gap-4  w-full">
-                    <RadarChart :chartData="kpiPerformanceMeasureFiltered"  />
-                </div>
-                
-            </div>
-
-            <div v-else class="text-center mt-5 text-gray-500">
-                    No data available for selected filters.
-                </div>
-
-
+        <div
+          v-if="manpowerSaudiNationalDataFiltered.length"
+          class="flex gap-5 justify-center"
+        >
+          <div class="flex flex-col gap-4 w-full">
+            <SemiCircleGauge
+              :total="manpowerSaudiNationalDataFiltered[0].total_sum"
+              :saudi="manpowerSaudiNationalDataFiltered[0].nationals_sum"
+            />
+          </div>
         </div>
 
+        <div
+          v-if="manpowerSaudiNationalDataFiltered.length"
+          class="flex gap-5 justify-center"
+        >
+          <div class="flex flex-col gap-4 w-full">
+            <RadialGauge :chartData="manpowerSaudiNationalDataFiltered" />
+          </div>
+        </div>
+        <div v-else class="text-center mt-5 text-gray-500">
+          No data available for selected filters.
+        </div>
+      </div>
+    </div>
 
+    <!-- Management KPI -->
 
-   </div>
+    <div v-if="activeTab =='Management KPI'" style="background-color: white">
+      <!-- KPI Performance Measure -->
 
-
-  <!-- Man Power Trends  -->
-
-  <div v-if="activeTab =='Man Power Trends'" style="background-color: white;" >
-
-    <!-- Manpower Summary -->
-
-         <div>
-            <div>
-                <h1 class="text-3xl font-semibold text-center mb-3 mt-5 pt-5">Manpower Summary</h1>
-                
-                
-                
-            </div>
-
-            <div v-if="manpowerSummaryDataFiltered.length" class="flex gap-5 justify-center">
-                <div  class="flex flex-col gap-4  w-full">
-                    <BulletChart :chartData="manpowerSummaryDataFiltered"  />
-                </div>
-                
-            </div>
-            <div v-else class="text-center mt-5 text-gray-500">
-                    No data available for selected filters.
-                </div>
-
-
+      <div>
+        <div>
+          <h1 class="text-3xl font-semibold text-center mb-3 mt-5 pt-5">
+            KPI Performance Measure
+          </h1>
         </div>
 
+        <div
+          v-if="kpiPerformanceMeasureFiltered.length"
+          class="flex gap-5 justify-center"
+        >
+          <div class="flex flex-col gap-4 w-full">
+            <RadarChart :chartData="kpiPerformanceMeasureFiltered" />
+          </div>
+        </div>
 
-     <!-- Manpower Detail -->
+        <div v-else class="text-center mt-5 text-gray-500">
+          No data available for selected filters.
+        </div>
+      </div>
+    </div>
 
-         <div>
-            <div>
-                <h1 class="text-3xl font-semibold text-center mb-3 mt-5">Manpower Detail</h1>
-                
-                
-                
-            </div>
+    <!-- Man Power Trends  -->
 
-             <div v-if="manpowerDetailsDataFiltered.length" class="ml-[10px] my-[20px] w-full h-[100px] flex gap-10">
+    <div v-if="activeTab =='Man Power Trends'" style="background-color: white">
+      <!-- Manpower Summary -->
 
-                <CountCard 
-                    :countCardData="{
+      <div>
+        <div>
+          <h1 class="text-3xl font-semibold text-center mb-3 mt-5 pt-5">
+            Manpower Summary
+          </h1>
+        </div>
+
+        <div
+          v-if="manpowerSummaryDataFiltered.length"
+          class="flex gap-5 justify-center"
+        >
+          <div class="flex flex-col gap-4 w-full">
+            <BulletChart :chartData="manpowerSummaryDataFiltered" />
+          </div>
+        </div>
+        <div v-else class="text-center mt-5 text-gray-500">
+          No data available for selected filters.
+        </div>
+      </div>
+
+      <!-- Manpower Detail -->
+
+      <div>
+        <div>
+          <h1 class="text-3xl font-semibold text-center mb-3 mt-5">
+            Manpower Detail
+          </h1>
+        </div>
+
+        <div
+          v-if="manpowerDetailsDataFiltered.length"
+          class="ml-[10px] my-[20px] w-full h-[100px] flex gap-10"
+        >
+          <CountCard
+            :countCardData="{
                         count: manpowerDetailsDataFiltered[0].totals.indicative,
                         title: 'Indicative Total',
                         data: manpowerDetailsDataFiltered[0].series[0].data
                     }"
-                    />
+          />
 
-                <CountCard 
-                :countCardData="{
+          <CountCard
+            :countCardData="{
                     count: manpowerDetailsDataFiltered[0].totals.actual,
                     title: 'Actual Total',
                     data: manpowerDetailsDataFiltered[0].series[1].data
                 }"
-                />    
+          />
+        </div>
 
-            </div>
+        <div
+          v-if="manpowerDetailsDataFiltered.length"
+          class="flex gap-5 justify-center"
+        >
+          <div class="flex flex-col gap-4 w-full">
+            <LineLableChart :chartData="manpowerDetailsDataFiltered" />
+          </div>
+        </div>
 
-            <div v-if="manpowerDetailsDataFiltered.length" class="flex gap-5 justify-center">
-                <div  class="flex flex-col gap-4  w-full">
-                    <LineLableChart :chartData="manpowerDetailsDataFiltered"  />
-                </div>
-                
-            </div>
+        <div v-else class="text-center mt-5 text-gray-500">
+          No data available for selected filters.
+        </div>
+      </div>
+    </div>
 
-            <div v-else class="text-center mt-5 text-gray-500">
-                    No data available for selected filters.
-                </div>
-        </div>    
-
-
-
+    <div class="w-full" style="color: #666666; text-align: end">
+      <p>Powered by <b style="color: #211a4b">TEAMPRO</b></p>
+    </div>
   </div>
-
-<div class="w-full" style="color:#666666; text-align:end;"><p>Powered by <b style='color:#211a4b;'>TEAMPRO</b></p></div>
-
-</div>
- 
-
-
-
-   
 </template>
 
 <script>
@@ -232,8 +223,16 @@ export default {
       activeTab: 'Saudization',
       kpiPerformanceMeasure,
       manpowerSummaryData,
-      manpowerDetailsData
-      
+      manpowerDetailsData,
+      childIntervalId: null,
+      tabs: [
+          'Saudization',
+          'Management KPI',
+          'Man Power Trends'
+      ],
+      childTabIndex: 0,
+      childIntervalId: null,
+      resumeTimeoutId: null,
     };
   },
 
@@ -247,9 +246,64 @@ export default {
     CountCard
 
 
+  },
+
+  mounted() {
+  this.startChildRotation();
+},
+
+watch: {
+  '$route.path'() {
+    this.childTabIndex = 0;
+    this.activeTab = this.tabs[0];
+    this.startChildRotation();
+  }
+},
+
+  methods: {
+    startChildRotation() {
+  if (this.childIntervalId) {
+    clearInterval(this.childIntervalId);
+  }
+
+  this.childIntervalId = setInterval(() => {
+    this.childTabIndex++;
+
+    if (this.childTabIndex >= this.tabs.length) {
+      this.childTabIndex = 0;
+
+      // 👇 FULL CYCLE COMPLETED
+      this.$emit('child-cycle-complete');
+    }
+
+    this.activeTab = this.tabs[this.childTabIndex];
+
+  }, 5000);
+},
+    handleChildClick(tab) {
+  // stop current rotation
+  if (this.childIntervalId) {
+    clearInterval(this.childIntervalId);
+  }
+
+  // sync index (VERY important)
+  const index = this.tabs.indexOf(tab);
+  if (index !== -1) {
+    this.childTabIndex = index;
+  }
+
+  this.activeTab = tab;
+
+  // clear previous resume timer (avoid stacking madness)
+  if (this.resumeTimeoutId) {
+    clearTimeout(this.resumeTimeoutId);
+  }
+
+  // resume after idle time
+  this.resumeTimeoutId = setTimeout(() => {
+    this.startChildRotation();
+  }, 10000); // 10 sec (change if you want)
+}
   }
 };
-
-
-
 </script>
