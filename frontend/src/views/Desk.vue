@@ -19,6 +19,34 @@
       <!-- Project -->
       <!-- <input placeholder="Project" class="border border-gray-300 rounded-md px-3 py-1 text-sm"></input> -->
 
+      <!-- Auto Switch Tabs -->
+      <div class="relative group inline-block max-h-1">
+        <button @click="isAutoRotateStopped = !isAutoRotateStopped">
+          <svg
+            class="h-8 w-8 text-[#dbdbdb] hover:opacity-75"
+            :class="{ 'text-[#fba800]': isAutoRotateStopped === false }"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            troke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <path
+              d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828"
+            />
+          </svg>
+        </button>
+
+        <div
+          class="absolute w-[148px] -m-12 mt-2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition pointer-events-none"
+        >
+          {{ isAutoRotateStopped ? 'Start auto switch tabs' : 'Stop auto switch tabs' }}
+        </div>
+      </div>
       <!-- Month -->
       <select
         v-model="selectedMonth"
@@ -79,9 +107,9 @@
         <!-- Management Button -->
         <router-link
           to="/management"
-          @click="handleManualClick('management', '/management')"
-          class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-          active-class="border border-[#fba800] bg-[#fefdec]"
+          @click="activeDepartment='management'"
+          class="flex font-semibold px-3 py-1 mt-3 w-full border border-gray-300 text-left rounded-md transition-all duration-300 ease-in-out"
+          active-class="!border-2 !border-[#fba800] bg-[#fefdec]"
         >
           Management & Overview
           <span class="ml-auto flex items-center">
@@ -105,9 +133,9 @@
         <!-- Maintenance Button -->
         <router-link
           to="/maintenance"
-          @click="handleManualClick('maintenance', '/maintenance')"
-          class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-          active-class="border border-[#fba800] bg-[#fefdec]"
+          @click="activeDepartment='maintenance'"
+          class="flex font-semibold px-3 py-1 mt-3 w-full border border-gray-300 text-left rounded-md transition-all duration-300 ease-in-out"
+          active-class="!border-2 !border-[#fba800] bg-[#fefdec]"
         >
           Maintenance
           <span class="ml-auto flex items-center">
@@ -131,9 +159,9 @@
         <!-- HR Button -->
         <router-link
           to="/hr"
-          @click="handleManualClick('hr', '/hr')"
-          class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-          active-class="border border-[#fba800] bg-[#fefdec]"
+          @click="activeDepartment='hr'"
+          class="flex font-semibold px-3 py-1 mt-3 w-full border border-gray-300 text-left rounded-md transition-all duration-300 ease-in-out"
+          active-class="!border-2 !border-[#fba800] bg-[#fefdec]"
         >
           HR
           <span class="ml-auto flex items-center">
@@ -157,9 +185,9 @@
         <!-- Safety, health & Environment Button -->
         <router-link
           to="/safety"
-          @click="handleManualClick('safety', '/safety')"
-          class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-          active-class="border border-[#fba800] bg-[#fefdec]"
+          @click="activeDepartment='safety'"
+          class="flex font-semibold px-3 py-1 mt-3 w-full border border-gray-300 text-left rounded-md transition-all duration-300 ease-in-out"
+          active-class="!border-2 !border-[#fba800] bg-[#fefdec]"
         >
           Safety, health & Environment
           <span class="ml-auto flex items-center">
@@ -182,8 +210,8 @@
         </router-link>
 
         <!-- Warehouse & Procurement Button -->
-        <!-- <router-link to="/warehouse" @click="handleManualClick('warehouse', '/warehouse')" class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-            active-class="border border-[#fba800] bg-[#fefdec]">
+        <!-- <router-link to="/warehouse" @click="activeDepartment='warehouse'" class="flex font-semibold px-3 py-1 mt-3 w-full border border-gray-300 text-left rounded-md transition-all duration-300 ease-in-out"
+            active-class="!border-2 !border-[#fba800] bg-[#fefdec]">
                 Warehouse & Procurement
                 <span class="ml-auto flex items-center">
                     <svg class="h-4 w-4 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -195,8 +223,8 @@
             </router-link> -->
 
         <!-- Customer SLA Button -->
-        <!-- <router-link to="/customer-sla" @click="handleManualClick('customer', '/customer')" class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-            active-class="border border-[#fba800] bg-[#fefdec]">
+        <!-- <router-link to="/customer-sla" @click="activeDepartment='customer'" class="flex font-semibold px-3 py-1 mt-3 w-full border border-gray-300 text-left rounded-md transition-all duration-300 ease-in-out"
+            active-class="!border-2 !border-[#fba800] bg-[#fefdec]">
                 Customer SLA
                 <span class="ml-auto flex items-center">
                     <svg class="h-4 w-4 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -210,9 +238,9 @@
         <!-- Operations Button -->
         <router-link
           to="/operations"
-          @click="handleManualClick('operations', '/operations')"
-          class="flex font-semibold px-3 py-1 mt-3 w-full text-left border border-gray-300 rounded-md transition-all duration-300 ease-in-out"
-          active-class="border border-[#fba800] bg-[#fefdec]"
+          @click="activeDepartment='operations'"
+          class="flex font-semibold px-3 py-1 mt-3 w-full border border-gray-300 text-left rounded-md transition-all duration-300 ease-in-out"
+          active-class="!border-2 !border-[#fba800] bg-[#fefdec]"
         >
           Operations
           <span class="ml-auto flex items-center">
@@ -236,7 +264,10 @@
       </div>
     </div>
     <div class="col-span-9">
-      <router-view @child-cycle-complete="handleChildCycleComplete" />
+      <router-view
+        :isAutoRotateStopped="isAutoRotateStopped"
+        @child-cycle-complete="handleChildCycleComplete"
+      />
     </div>
   </div>
   <!-- <div class="w-full" style="color:#666666; text-align:end;"><p>Powered by <b style='color:#211a4b;'>TEAMPRO</b></p></div> -->
@@ -316,10 +347,9 @@ export default {
     isAutoRotateStopped: false,
     activeDepartment: "management",
     resumeTimeoutId: null,
-
+    currentSiteIndex: 0,
     };
   },
-
   created() {
     const now = new Date();
     now.setMonth(now.getMonth() - 1); // shows the previous month
@@ -356,40 +386,33 @@ export default {
 
     },
 
-    handleManualClick(dept, route) {
-  this.isAutoRotateStopped = true;
-
-  const index = this.departments.findIndex(d => d.route === route);
-  if (index !== -1) {
-    this.currentTabIndex = index;
-  }
-
-  this.activeDepartment = dept;
-  this.$router.push(route);
-
-  if (this.resumeTimeoutId) {
-    clearTimeout(this.resumeTimeoutId);
-  }
-
-  this.resumeTimeoutId = setTimeout(() => {
-    this.isAutoRotateStopped = false;
-  }, 10000);
-},
-
     handleChildCycleComplete() {
-  if (this.isAutoRotateStopped) return;
+      if (this.isAutoRotateStopped) return;
 
-  this.currentTabIndex++;
+      this.currentTabIndex++;
 
-  if (this.currentTabIndex >= this.departments.length) {
-    this.currentTabIndex = 0;
-  }
+      // ✅ Parent cycle completed
+      if (this.currentTabIndex >= this.departments.length) {
+        this.currentTabIndex = 0;
 
-  const current = this.departments[this.currentTabIndex];
+        // 🔁 Change Site here
+        this.currentSiteIndex++;
 
-  this.activeDepartment = current.name;
-  this.$router.push(current.route);
-}
+        if (this.currentSiteIndex >= this.sites.length) {
+          this.currentSiteIndex = 0;
+        }
+
+        this.selectedSite = this.sites[this.currentSiteIndex].name;
+
+        // Apply filter after site change
+        this.applyFilter();
+      }
+
+      const current = this.departments[this.currentTabIndex];
+
+      this.activeDepartment = current.name;
+      this.$router.push(current.route);
+    }
 
 
 

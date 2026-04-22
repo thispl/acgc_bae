@@ -2,7 +2,7 @@
 	<!-- Tabs Section -->
 	<div class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-auto items-center">
 		<button
-			@click="handleChildClick('Organisation Chart')"
+			@click="activeTab='Organisation Chart'"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
 			:class="{
 				'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Organisation Chart',
@@ -14,7 +14,7 @@
 		<p>|</p>
 
 		<button
-			@click="handleChildClick('Total Activities Done')"
+			@click="activeTab='Total Activities Done'"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
 			:class="{
 				'border-b-2 border-b-[#fba800] bg-[#fefdec]':
@@ -27,7 +27,7 @@
 		<p>|</p>
 
 		<button
-			@click="handleChildClick('Maintenance')"
+			@click="activeTab='Maintenance'"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
 			:class="{ 'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Maintenance' }"
 		>
@@ -35,7 +35,7 @@
 		</button>
 		<p>|</p>
 		<button
-			@click="handleChildClick('HR')"
+			@click="activeTab='HR'"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
 			:class="{ 'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'HR' }"
 		>
@@ -44,7 +44,7 @@
 		<p>|</p>
 
 		<button
-			@click="handleChildClick('Safety')"
+			@click="activeTab='Safety'"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
 			:class="{ 'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Safety' }"
 		>
@@ -54,7 +54,7 @@
 		<p>|</p>
 
 		<button
-			@click="handleChildClick('Operations')"
+			@click="activeTab='Operations'"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
 			:class="{ 'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Operations' }"
 		>
@@ -439,6 +439,10 @@ import TotalActivitiesData from "@/data/maintenance/total_activities_done";
 import organisationChartLink from "@/data/maintenance/organisation_chart_links.js";
 
 export default {
+	
+  props: {
+    isAutoRotateStopped: Boolean
+  },
 	name: "Management",
 	components: { PercentageCard, MultiSeriesChart, CountCard, FlowChart, TotalWorkChart },
 	computed: {
@@ -601,57 +605,50 @@ export default {
 },
 
 watch: {
+  isAutoRotateStopped(newVal) {
+    if (newVal) {
+      clearInterval(this.childIntervalId);
+    } else {
+      this.startChildRotation();
+    }
+  },
+
   '$route.path'() {
     this.childTabIndex = 0;
     this.activeTab = this.tabs[0];
-    this.startChildRotation();
+
+    if (!this.isAutoRotateStopped) {
+      this.startChildRotation();
+    } else {
+      clearInterval(this.childIntervalId);
+    }
+  }
+},
+beforeUnmount() {
+  if (this.childIntervalId) {
+    clearInterval(this.childIntervalId);
   }
 },
 
   methods: {
-    startChildRotation() {
+startChildRotation() {
   if (this.childIntervalId) {
     clearInterval(this.childIntervalId);
   }
+
+  if (this.isAutoRotateStopped) return;
 
   this.childIntervalId = setInterval(() => {
     this.childTabIndex++;
 
     if (this.childTabIndex >= this.tabs.length) {
       this.childTabIndex = 0;
-
-      // 👇 FULL CYCLE COMPLETED
       this.$emit('child-cycle-complete');
     }
 
     this.activeTab = this.tabs[this.childTabIndex];
-
-  }, 5000);
+  }, 1000);
 },
-    handleChildClick(tab) {
-  // stop current rotation
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-
-  // sync index (VERY important)
-  const index = this.tabs.indexOf(tab);
-  if (index !== -1) {
-    this.childTabIndex = index;
-  }
-
-  this.activeTab = tab;
-
-  // clear previous resume timer (avoid stacking madness)
-  if (this.resumeTimeoutId) {
-    clearTimeout(this.resumeTimeoutId);
-  }
-
-  // resume after idle time
-  this.resumeTimeoutId = setTimeout(() => {
-    this.startChildRotation();
-  }, 10000); // 10 sec (change if you want)
-}
   }
 };
 </script>

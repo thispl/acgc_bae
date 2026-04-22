@@ -4,7 +4,7 @@
     class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-auto items-center"
   >
     <button
-      @click="handleChildClick('Overall Scheduled vs Accomplished')"
+      @click="activeTab='Overall Scheduled vs Accomplished'"
       class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
       :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Overall Scheduled vs Accomplished' }"
     >
@@ -12,7 +12,7 @@
     </button>
     <p>|</p>
     <button
-      @click="handleChildClick('Catering and Laundry Services')"
+      @click="activeTab='Catering and Laundry Services'"
       class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
       :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Catering and Laundry Services' }"
     >
@@ -20,7 +20,7 @@
     </button>
     <p>|</p>
     <button
-      @click="handleChildClick('Room Occupancy')"
+      @click="activeTab='Room Occupancy'"
       class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
       :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Room Occupancy' }"
     >
@@ -554,6 +554,10 @@
 
 
     export default {
+      
+  props: {
+    isAutoRotateStopped: Boolean
+  },
          setup() {
             const filterStore = useFilterStore();
 
@@ -752,58 +756,50 @@ mounted() {
 },
 
 watch: {
+  isAutoRotateStopped(newVal) {
+    if (newVal) {
+      clearInterval(this.childIntervalId);
+    } else {
+      this.startChildRotation();
+    }
+  },
+
   '$route.path'() {
     this.childTabIndex = 0;
     this.activeTab = this.tabs[0];
-    this.startChildRotation();
+
+    if (!this.isAutoRotateStopped) {
+      this.startChildRotation();
+    } else {
+      clearInterval(this.childIntervalId);
+    }
   }
 },
-
+beforeUnmount() {
+  if (this.childIntervalId) {
+    clearInterval(this.childIntervalId);
+  }
+},
 methods: {
 startChildRotation() {
   if (this.childIntervalId) {
     clearInterval(this.childIntervalId);
   }
 
+  if (this.isAutoRotateStopped) return;
+
   this.childIntervalId = setInterval(() => {
     this.childTabIndex++;
 
     if (this.childTabIndex >= this.tabs.length) {
       this.childTabIndex = 0;
-
-      // 👇 FULL CYCLE COMPLETED
       this.$emit('child-cycle-complete');
     }
 
     this.activeTab = this.tabs[this.childTabIndex];
-
-  }, 5000);
+  }, 1000);
 },
 
-handleChildClick(tab) {
-  // stop current rotation
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-
-  // sync index (VERY important)
-  const index = this.tabs.indexOf(tab);
-  if (index !== -1) {
-    this.childTabIndex = index;
-  }
-
-  this.activeTab = tab;
-
-  // clear previous resume timer (avoid stacking madness)
-  if (this.resumeTimeoutId) {
-    clearTimeout(this.resumeTimeoutId);
-  }
-
-  // resume after idle time
-  this.resumeTimeoutId = setTimeout(() => {
-    this.startChildRotation();
-  }, 10000); // 10 sec (change if you want)
-}
 },
     };
 </script>
