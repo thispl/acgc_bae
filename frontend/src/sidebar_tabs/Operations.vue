@@ -396,7 +396,7 @@ startChildRotation() {
     }
 
     this.activeTab = this.tabs[this.childTabIndex];
-  }, 1000);
+  }, 5000);
 }
   }
 };
