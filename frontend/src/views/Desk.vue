@@ -1,13 +1,17 @@
 <template>
   <!-- Header Section -->
   <div class="bg-white flex p-5 items-center">
-    <div class="flex flex-row">
-      <img src="../assets/icons/ACGC LOGO FULL NAME.png" class="h-10" /><span
-        ><h1 class="font-semibold text-2xl ml-[20px] mt-[5px]">
+    <div class="flex flex-row w-full">
+      <img src="../assets/icons/ACGC LOGO FULL NAME.png" class="h-10 mt-4" />
+      <div class="w-full">
+        <h1 class="font-semibold text-2xl ml-[20px] mt-[5px] w-full text-center">
           Monthly Progress Observation and Analysis - {{ this.selectedMonth }}
           {{this.selectedYear}}
-        </h1></span
-      >
+        </h1>
+        <h2 class="font-semibold text-xl ml-[20px] mt-[5px] w-full text-center opacity-50">
+          {{ this.selectedSiteDescription }}
+        </h2>
+      </div>
     </div>
 
     <!-- Filter Section -->
@@ -288,12 +292,12 @@ export default {
       ],
       sites: [
         // { id: "EWRC", name: "EWRC" },
-        { id: "PS10", name: "PS10" },
-        { id: "PS06", name: "PS06" },
-        { id: "PS03", name: "PS03" },
-        { id: "PS01", name: "PS01" },
-        { id: "PRS1", name: "PRS1" },
-        { id: "PS05", name: "PS05" },
+        { id: "PS10", name: "PS10", description: "7006 - East West Residential Compound for PS10" },
+        { id: "PS06", name: "PS06", description: "7005 - East West Residential Compound for PS06" },
+        { id: "PS03", name: "PS03", description: "7003 - East West Residential Compound for PS03" },
+        { id: "PS01", name: "PS01", description: "7002 - East West Residential Compound for PS01" },
+        { id: "PRS1", name: "PRS1", description: "7007 - East West Residential Compound for PRS1" },
+        { id: "PS05", name: "PS05", description: "7004 - East West Residential Compound for PS05" },
 
       ],
 
@@ -347,9 +351,15 @@ export default {
     isAutoRotateStopped: false,
     activeDepartment: "management",
     resumeTimeoutId: null,
-    currentSiteIndex: 0,
+    currentSiteIndex: 0,    
     };
   },
+  computed: {
+  selectedSiteDescription() {
+    const site = this.sites.find(s => s.name === this.selectedSite);
+    return site ? site.description : "";
+  }
+},
   created() {
     const now = new Date();
     now.setMonth(now.getMonth() - 1); // shows the previous month
