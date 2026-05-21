@@ -11,7 +11,7 @@
       Safety
     </button>
     <p>|</p>
-    <button @click="activeTab='Safety Security'" class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
+    <button @click="activeTab='Safety Training'" class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
       :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Safety Training' }">
       Safety Training
     </button>
