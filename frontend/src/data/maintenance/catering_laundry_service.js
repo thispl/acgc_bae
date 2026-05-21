@@ -780,5 +780,162 @@ export default [
         data: [5, 5, 5, 5, 5]
       }
     ]
+  },
+    {
+  meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS10'
+  },
+
+records: [
+  {
+    name: 'Week 1',
+    data: [5, 5, 5, 5, 5]
+  },
+  {
+    name: 'Week 2',
+    data: [5, 5, 5, 5, 5]
+  },
+  {
+    name: 'Week 3',
+    data: [5, 5, 5, 5, 5]
+  },
+  {
+    name: 'Week 4',
+    data: [5, 5, 5, 5, 5]
+  }
+]
+},
+// {
+//   meta: {
+//     year: 2026,
+//     month: "April",
+//     site: 'PS06'
+//   },
+
+// records: [
+//   {
+//     name: 'Week 1',
+//     data: [4.80, 4.80, 4.80, 4.80, 4.80]
+//   },
+//   {
+//     name: 'Week 2',
+//     data: [4.60, 4.40, 4.60, 4.20, 4.80]
+//   },
+//   {
+//     name: 'Week 3',
+//     data: [3.60, 3.80, 3.60, 3.60, 4.40]
+//   },
+//   {
+//     name: 'Week 4',
+//     data: [4.20, 4.60, 4.00, 4.80, 4.20]
+//   }
+// ]
+// },
+{
+  meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS03'
+  },
+
+records: [
+  {
+    name: 'Week 1',
+    data: [4, 4.25, 4.5, 4.25, 3],
+  },
+  {
+    name: 'Week 2',
+    data:   [4.25, 4.5, 4.5, 4.5, 3.75],
+  },
+  {
+    name: 'Week 3',
+    data:[4.5, 4.75, 4.5, 4.75, 3.75],
+  },
+  {
+    name: 'Week 4',
+    data:[4.5, 4.75, 4.5, 4.75, 3.75],
+  }
+]
+},
+{
+  meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS01'
+  },
+
+records: [
+  {
+    name: 'Week 1',
+    data:[5, 5, 5, 5, 4],
+  },
+  {
+    name: 'Week 2',
+    data:    [5, 5, 5, 5, 5],
+  },
+  {
+    name: 'Week 3',
+    data:   [5, 5, 5, 5, 5],
+  },
+  {
+    name: 'Week 4',
+    data: [5, 5, 5, 5, 4]
+  }
+]
+},
+{
+  meta: {
+    year: 2026,
+    month: "April",
+    site: 'PRS1'
+  },
+
+records: [
+  {
+    name: 'Week 1',
+    data: [5, 5, 5, 5, 5]
+  },
+  {
+    name: 'Week 2',
+    data: [5, 5, 5, 5, 5]
+  },
+  {
+    name: 'Week 3',
+    data: [3, 5, 3, 5, 5]
+  },
+  {
+    name: 'Week 4',
+    data: [5, 5, 5, 5, 5]
+  }
+]
+},
+{
+  meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS05'
+  },
+
+records: [
+  {
+    name: 'Week 1',
+    data: [5, 5, 5, 5, 5]
+  },
+  {
+    name: 'Week 2',
+    data: [5, 5, 5, 5, 5]
+  },
+  {
+    name: 'Week 3',
+    data: [5, 5, 5, 5, 5]
+  },
+  {
+    name: 'Week 4',
+    data: [5, 5, 5, 5, 5]
+  }
+]
+
   }
 ]

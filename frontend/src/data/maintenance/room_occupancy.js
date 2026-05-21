@@ -538,4 +538,106 @@ occupancyPercent: [94, 100, 100]
 }
      ]
     },
+ {
+  meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS10'
+  },    
+        
+  records:[
+  {
+  buildings: ["1001 - Type 1","1001 - Type 2","1002 - Type 3","1003 - Type 3","1004 - Type 4","Nurse Room","Driver Room"],
+  totalRooms:   [8, 32, 88, 88, 28, 1, 1],
+  occupiedRooms:[5, 32, 78, 86, 26, 1, 1],
+  vacantRooms:  [3, 0, 10, 2, 2, 0, 0],
+  occupancyPercent:[63,100,89,98,93,100,100]
+}
+]
+    },
+  {
+  meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS06'
+  },    
+        
+  records:[
+  {
+  buildings: ["6100 - TYPE - 1","6101 - TYPE - 2","6102 - TYPE - 3-1","6103 - TYPE - 3-2","6000 - TYPE - 4"],
+  totalRooms:   [50, 96, 96, 28, 2],
+  occupiedRooms:[40, 88, 92, 28, 2],
+  vacantRooms:  [10, 8, 4, 0, 0],
+  occupancyPercent:[80,92,96,100,100]
+},
+  ]
+    },
+  {
+  meta: {
+    year: 2026,
+    month: "April       ",
+    site: 'PS03'
+  },    
+        
+  records:[
+  {
+  buildings: ["3101 - Type 1 & 2 Residential Building","3117 - Type 2 Residential Building","3102 - Type 3 Residential Building","3103 - Type 3 Residential Building","3104 - Type 3 Residential Building","3105 - Type 3 Residential Building","3106 - Type 3 Residential Building","3107 - Type 4 Residential Building","3100 - Community Center"],
+  totalRooms:   [80, 56, 84, 84, 84, 90, 90, 38, 2],
+  occupiedRooms:[73, 55, 82, 84, 83, 86, 88, 31, 2],
+  vacantRooms:  [7, 1, 2, 0, 1, 4, 2, 7, 0],
+  occupancyPercent:[91,98,98,100,99,96,98,82,100]
+}
+]
+    },      
+  {
+  meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS01'
+  },    
+        
+  records:[
+  {
+  buildings: ["101 - Type 1 & 2","102 - Type 3","103 - Type 4"],
+  totalRooms:   [14, 112, 9],
+  occupiedRooms:[11, 110, 3],
+  vacantRooms:  [3, 2, 6],
+  occupancyPercent:[79,98,33]
+}
+]
+    },
+  {
+  meta: {
+    year: 2026,
+    month: "April ",
+    site: 'PRS1'
+  },    
+        
+  records:[
+  {
+  buildings: ["1101 - Type - 1 & 2","1102 - Type - 3","1103 - Type - 4"],
+  totalRooms:   [20, 60, 7],
+  occupiedRooms:[16, 60, 6],
+  vacantRooms:  [4, 0, 1],
+  occupancyPercent:[80,100,86]
+}
+]
+    },
+  {
+  meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS05'
+  },    
+        
+  records:[
+  {
+  buildings: ["5100 - TYPE-2", "5101 - TYPE-3", "5102 - TYPE-4"],
+  totalRooms:   [16, 72, 7],
+  occupiedRooms:[15, 72, 7],
+  vacantRooms:  [1, 0,0],
+  occupancyPercent:[94, 100, 100] 
+}
+     ]
+    },   
 ]

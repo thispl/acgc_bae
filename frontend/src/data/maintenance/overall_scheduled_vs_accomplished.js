@@ -1132,6 +1132,233 @@ categories: [
       }
     ]
   },
+   {
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS10'
+  },
+  records:[
+    {
+  series: [
+  { name: "Planned", data: [51, 0, 821, 1079, 764, 684, 613] },
+  { name: "Completed", data: [51, 0, 821, 1079, 764, 684, 613] },
+  { name: "Outstanding", data: [0, 0, 0, 0, 0, 0, 0] }
+],
+
+  categories: [
+    "A-Architectural",
+    "C-Civil",
+    "E-Electrical",
+    "F-FCM",
+    "H-HVAC",
+    "J-C3",
+    "M-Mechanical",
+    
+  ],
+
+  
+  completion_rate : "100 %",
+
+  totals:{
+
+    Planned :"4012",
+    Completed:"4012"
+  }
+  
+  }
+]
+  },
+  {
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS03'
+  },
+  records:[
+    {
+  series:[
+  { name: "Planned", data: [0, 86, 0, 579, 1151, 1239, 1201, 704] },
+  { name: "Completed", data: [0, 86, 0, 579, 1151, 1239, 1201, 704] },
+  { name: "Outstanding", data: [0, 0, 0, 0, 0, 0, 0, 0] }
+],
+
+  categories: [
+    "A-Architectural",
+    "C-Civil",
+    "E-Electrical",
+    "F-FCM",
+    "H-HVAC",
+    "J-C3",
+    "M-Mechanical",
+    
+  ],
+
+  
+  completion_rate : "100 %",
+
+  totals:{
+
+    Planned :"4960",
+    Completed:"4960"
+  }
+  
+  }
+]
+  },
+  {
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS06'
+  },
+  records:[
+    {
+  series:[
+  { name: "Planned", data: [0, 12, 0, 453, 932, 839, 668, 613] },
+  { name: "Completed", data: [0, 12, 0, 453, 932, 839, 668, 613] },
+  { name: "Outstanding", data: [0, 0, 0, 0, 0, 0, 0, 0] }
+],
+
+  categories: [
+    "A-Architectural",
+    "C-Civil",
+    "E-Electrical",
+    "F-FCM",
+    "H-HVAC",
+    "J-C3",
+    "M-Mechanical",
+    
+  ],
+
+  
+  completion_rate : "100 %",
+
+  totals:{
+
+    Planned :"3517",
+    Completed:"3517"
+  }
+  
+  }
+]
+  },
+  {
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS01'
+  },
+  records:[
+    {
+  series: [
+  { name: "Planned", data: [0, 12, 0, 453, 932, 839, 668, 613] },
+  { name: "Completed", data: [0, 12, 0, 453, 932, 839, 668, 613] },
+  { name: "Outstanding", data: [0, 0, 0, 0, 0, 0, 0, 0] }
+],
+
+  categories: [
+    "A-Architectural",
+    "C-Civil",
+    "E-Electrical",
+    "F-FCM",
+    "H-HVAC",
+    "J-C3",
+    "M-Mechanical",
+    
+  ],
+
+  
+  completion_rate : "100 %",
+
+  totals:{
+
+    Planned :"3517",
+    Completed:"3517"
+  }
+  
+  }
+]
+  },
+  {
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PRS1'
+  },
+  records:[
+    {
+  series: [
+  { name: "Planned", data: [38, 286, 527, 330, 320, 398] },
+  { name: "Completed", data: [38, 286, 527, 330, 320, 398] },
+  { name: "Outstanding", data: [0, 0, 0, 0, 0, 0] }
+],
+
+  categories: [
+    "A-Architectural",
+    "C-Civil",
+    "E-Electrical",
+    "F-FCM",
+    "H-HVAC",
+    "J-C3",
+    "M-Mechanical",
+    
+  ],
+
+  
+  completion_rate : "100 %",
+
+  totals:{
+
+    Planned :"1899",
+    Completed:"1899"
+  }
+  
+  }
+]
+  },
+  {
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS05'
+  },
+  records:[
+    {
+  series:[
+  { name: "Planned", data: [33, 0, 252, 783, 367, 315, 381] },
+  { name: "Completed", data: [33, 0, 252, 783, 367, 315, 381] },
+  { name: "Outstanding", data: [0, 0, 0, 0, 0, 0, 0] }
+],
+  categories: [
+    "A-Architectural",
+    "C-Civil",
+    "E-Electrical",
+    "F-FCM",
+    "H-HVAC",
+    "J-C3",
+    "M-Mechanical",
+    
+  ],
+
+  
+  completion_rate : "100",
+
+  totals:{
+
+    Planned :"2131",
+    Completed:"2131"
+  }
+  
+  }
+]
+  },
 ]
 
 

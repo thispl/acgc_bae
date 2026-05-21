@@ -500,4 +500,99 @@ percent: [0, 0, 0, 100, 0, 0, 0, 0, 0, 100, 100, 0, 0, 0, 0, 100, 0]
 //PS01 no data
 //PRS1 no data
 //PS05 no data
+
+//PS10 no data
+   {
+
+      meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS06'
+  },
+
+      records:[{
+  topics: [
+    
+    "General Food Safety",
+    "Personal Hygiene",
+    "Chemical Handling",
+    "General Site Safety",
+    "Personal Hygiene",
+    "Basic Spill Clean-Up Safety Procedures",
+    "Cross Contamination",
+    "Good Hygiene Practice",
+    "Waste Management",
+    "Importance of PPE",
+    "Safety Maintenance",
+    "General Site Safety Induction",
+    "Food Safety",
+    "Contamination Prevention",
+    "General Safety Induction",
+    "Cleaning & Sanitization"
+  ],
+
+  applicable: [
+   0, 18.00, 0, 18.00, 0, 0, 0, 0, 0, 18.00, 0, 0, 0, 0, 0, 0, 18.00
+],
+
+actual: [
+   0, 18.00, 0, 18.00, 0, 0, 0, 0, 0, 18.00, 0, 0, 0, 0, 0, 0, 18.00
+],
+
+percent: [
+   0, 100, 0, 100, 0, 0, 0, 0, 0, 100, 0, 0, 0, 0, 0, 0, 100
+]
+   }]
+
+},
+   {
+
+        meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS03'
+  },
+
+      records:[{
+  topics: [
+    
+    "General Food Safety",
+    "Personal Hygiene",
+    "Chemical Handling",
+    "General Site Safety",
+    "Personal Hygiene",
+    "Basic Spill Clean-Up Safety Procedures",
+    "Cross Contamination",
+    "Good Hygiene Practice",
+    "Waste Management",
+    "Importance of PPE",
+    "Safety Maintenance",
+    "General Site Safety Induction",
+    "Food Safety",
+    "Contamination Prevention",
+    "General Safety Induction",
+    "Cleaning & Sanitization"
+  ],
+
+  applicable: [
+     31.00, 0, 0,  1.00 , 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+  ],
+
+  actual: [
+     31.00, 0, 0,  1.00 , 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+  ],
+
+  percent: [
+     100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 
+  ]
+
+   }]
+
+},
+
+//PS01 no data
+//PRS1 no data
+//PR05 no data
+
+
 ]

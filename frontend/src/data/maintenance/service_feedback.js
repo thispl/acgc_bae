@@ -1424,4 +1424,290 @@ export default [
         ]
 
     },
+    {
+    
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS10'
+  },    
+        
+     records:[   
+    {
+        name: 'Employees Responsiveness',
+        // color: '#9b5cf6',
+        data:  [4.86, 5.00, 4.89, 5.00],
+    },
+    {
+        name: 'Front Desk Employee',
+        // color: '#9b5cf6',
+        data:  [4.71, 4.71, 4.89, 4.75],
+    },
+    {
+        name: 'Room Service',
+        // color: '#9b5cf6',
+        data: [5.00, 4.86, 4.89, 4.88],
+    },
+    {
+        name: 'Employees Professionalism',
+        // color: '#9b5cf6',
+        data:[4.71, 5.00, 4.78, 5.00],
+    },
+    {
+        name: 'Cleanliness of the Room',
+        color: '#9b5cf6',
+        data: [4.86, 4.57, 4.78, 4.75],
+    },
+    {
+        name: 'Taste of the food',
+        // color: '#9b5cf6',
+        data: [4.71, 3.57, 4.33, 3.38]
+    },
+    {
+        name: 'Service',
+        // color: '#9b5cf6',
+        data: [4.71, 4.29, 4.44, 3.38]
+    },
+]
+
+},
+//      {
+    
+//     meta: {
+//     year: 2026,
+//     month: "April",
+//     site: 'PS06'
+//   },    
+        
+//      records:[   
+//     {
+//         name: 'Employees Responsiveness',
+//         // color: '#9b5cf6',
+//         data: [4.80, 5, 4.60, 4.60],
+//     },
+//     {
+//         name: 'Front Desk Employee',
+//         // color: '#9b5cf6',
+//         data: [4.80, 5, 4.60, 4.60],
+//     },
+//     {
+//         name: 'Room Service',
+//         // color: '#9b5cf6',
+//         data: [4.80, 5, 4.60, 4.80],
+//     },
+//     {
+//         name: 'Employees Professionalism',
+//         // color: '#9b5cf6',
+//         data: [4.80, 5, 4.60, 4.80],
+//     },
+//     {
+//         name: 'Cleanliness of the Room',
+//         color: '#9b5cf6',
+//         data: [4.80, 5, 4.60, 4.80],
+//     },
+//     {
+//         name: 'Taste of the food',
+//         // color: '#9b5cf6',
+//         data: [4.80, 4.60, 3.60, 4.20],
+//     },
+//     {
+//         name: 'Service',
+//         // color: '#9b5cf6',
+//         data: [4.80, 4.40, 3.80, 4.60],
+//     },
+// ]
+
+// },
+    {
+    
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS03'
+  },    
+        
+     records:[   
+    {
+        name: 'Employees Responsiveness',
+        // color: '#9b5cf6',
+        data:[4.5, 5, 5, 4.75],
+    },
+    {
+        name: 'Front Desk Employee',
+        // color: '#9b5cf6',
+        data: [4.75, 5, 4.75, 4.75],
+    },
+    {
+        name: 'Room Service',
+        // color: '#9b5cf6',
+        data:  [4.75, 5, 5, 4.75],
+    },
+    {
+        name: 'Employees Professionalism',
+        // color: '#9b5cf6',
+        data:[4.5, 5, 5, 5],
+    },
+    {
+        name: 'Cleanliness of the Room',
+        color: '#9b5cf6',
+        data:  [4, 4, 5, 4.5],
+    },
+    {
+        name: 'Taste of the food',
+        // color: '#9b5cf6',
+        data:  [4, 4, 4.5, 4.25],
+    },
+    {
+        name: 'Service',
+        // color: '#9b5cf6',
+        data:  [4.25, 5, 4.75, 5]
+    },
+]
+
+},
+    {
+    
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS01'
+  },    
+        
+     records:[   
+    {
+        name: 'Employees Responsiveness',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Front Desk Employee',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Room Service',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Employees Professionalism',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Cleanliness of the Room',
+        color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Taste of the food',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Service',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+]
+
+},
+
+
+    {
+    
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PRS1'
+  },    
+        
+     records:[   
+    {
+        name: 'Employees Responsiveness',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Front Desk Employee',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Room Service',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Employees Professionalism',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Cleanliness of the Room',
+        color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Taste of the food',
+        // color: '#9b5cf6',
+        data: [5, 5, 3, 5],
+    },
+    {
+        name: 'Service',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+]
+
+},
+
+ {
+    
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS05'
+  },    
+        
+     records:[   
+    {
+        name: 'Employees Responsiveness',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Front Desk Employee',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Room Service',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Employees Professionalism',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Cleanliness of the Room',
+        color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Taste of the food',
+        // color: '#9b5cf6',
+        data: [5, 4, 5, 5],
+    },
+    {
+        name: 'Service',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+]
+
+},
+
 ]

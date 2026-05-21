@@ -548,6 +548,116 @@ records: [
 ]
 
 },
+{
+
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS10'
+  },
+
+records: [
+
+    {
+        name: 'Laundry',
+        data: "2272",
+    },
+]
+
+},
+
+    {
+
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS06'
+  },
+
+records: [
+
+    {
+        name: 'Laundry',
+        data: "2054",
+    },
+]
+
+},
+    {
+
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS03'
+  },
+
+records: [
+
+    {
+        name: 'Laundry',
+        data: "3798",
+    },
+]
+
+},
+    {
+
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS01'
+  },
+
+records: [
+
+    {
+        name: 'Laundry',
+        data: "1420",
+    },
+]
+
+},
+    {
+
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PRS1'
+  },
+
+records: [
+
+    {
+        name: 'Laundry',
+        data: "941",
+    },
+]
+
+},
+    {
+
+
+    meta: {
+    year: 2026,
+    month: "April",
+    site: 'PS05'
+  },
+
+records: [
+
+    {
+        name: 'Laundry',
+        data: "574",
+    },
+]
+
+},
+
 
 
 ]    
