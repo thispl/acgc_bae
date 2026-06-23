@@ -1090,4 +1090,184 @@ percentage: [
   }]
 
 },
+ {
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS06'
+  }, 
+
+ records: [{
+  functions: [
+    "Site Management Staff",
+    "MEP Technical Staff",
+    "Housekeeping & Recreational Service Staff"
+  ],
+
+  total: [16, 28, 58],
+
+  nationals: [7, 0, 1],
+
+  total_sum: 102,
+  nationals_sum: 8,
+
+  percentage: [
+    ((7 / 16) * 100).toFixed(1),
+    ((0 / 28) * 100).toFixed(1),
+    ((1 / 58) * 100).toFixed(1)
+  ]
+}]
+
+},
+  {
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS10'
+  }, 
+
+ records: [{
+  functions: [
+    "Site Management Staff",
+    "MEP Technical Staff",
+    "Housekeeping & Recreational Service Staff"
+  ],
+
+  total: [19, 29, 53],
+
+  nationals: [5, 1, 3],
+
+  total_sum: 101,
+  nationals_sum: 9,
+
+  percentage: [
+    ((5 / 19) * 100).toFixed(1),
+    ((1 / 29) * 100).toFixed(1),
+    ((3 / 53) * 100).toFixed(1)
+  ]
+}]
+
+},
+  {
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS03'
+  }, 
+
+  records: [{
+  functions: [
+    "Site Management Staff",
+    "MEP Technical Staff",
+    "Housekeeping & Recreational Service Staff"
+  ],
+
+  total: [25, 39, 87],
+
+  nationals: [8, 2, 2],
+
+  total_sum: 151,
+  nationals_sum: 12,
+
+  percentage: [
+    ((8 / 25) * 100).toFixed(1),
+    ((2 / 39) * 100).toFixed(1),
+    ((2 / 87) * 100).toFixed(1)
+  ]
+}]
+
+},
+  {
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS01'
+  }, 
+
+ records: [{
+  functions: [
+    "Site Management Staff",
+    "MEP Technical Staff",
+    "Housekeeping & Recreational Service Staff"
+  ],
+
+  total: [10, 19, 30],
+
+  nationals: [3, 1, 4],
+
+  total_sum: 59,
+  nationals_sum: 8,
+
+  percentage: [
+    ((3 / 10) * 100).toFixed(1),
+    ((1 / 19) * 100).toFixed(1),
+    ((4 / 30) * 100).toFixed(1)
+  ]
+}]
+
+},
+  {
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PRS1'
+  }, 
+
+  records:[{
+  functions: [                     
+    "Site Management Staff",
+    "MEP Technical Staff",
+    "Housekeeping & Recreational Service Staff"
+  ],
+
+ total: [5, 16, 27],
+
+nationals: [5, 1, 3],
+
+total_sum: 48,
+nationals_sum: 9,
+
+percentage: [
+  ((5 / 5) * 100).toFixed(1),
+  ((1 / 16) * 100).toFixed(1),
+  ((3 / 27) * 100).toFixed(1)
+]
+  }]
+
+},
+  {
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS05'
+  }, 
+
+  records: [{
+  functions: [
+    "Site Management Staff",
+    "MEP Technical Staff",
+    "Housekeeping & Recreational Service Staff"
+  ],
+
+  total: [9, 16, 31],
+
+  nationals: [4, 0, 2],
+
+  total_sum: 56,
+  nationals_sum: 6,
+
+  percentage: [
+    ((4 / 9)  * 100).toFixed(1),
+    ((0 / 16) * 100).toFixed(1),
+    ((2 / 31) * 100).toFixed(1)
+  ]
+}]
+
+},
 ]

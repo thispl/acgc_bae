@@ -575,7 +575,7 @@ occupancyPercent: [94, 100, 100]
   {
   meta: {
     year: 2026,
-    month: "April       ",
+    month: "April",
     site: 'PS03'
   },    
         
@@ -640,4 +640,108 @@ occupancyPercent: [94, 100, 100]
 }
      ]
     },   
+    {
+  meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS10'
+  },    
+        
+  records:[
+  {
+    buildings: ["1001 - Type 1", "1001 - Type 2", "1002 - Type 3", "1003 - Type 3", "1004 - Type 4", "Nurse Room", "Driver Room"],
+    totalRooms:      [8,  32, 88, 88, 28, 1, 1],
+    occupiedRooms:   [5,  30, 84, 86, 25, 1, 1],
+    vacantRooms:     [3,   2,  4,  2,  3, 0, 0],
+    occupancyPercent:[63, 94, 95, 98, 89, 100, 100]
+  }
+]
+    },
+  {
+  meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS06'
+  },    
+        
+  records:[
+  {
+    buildings: ["6100", "6101", "6102", "6103", "6000"],
+    totalRooms:      [8,  42, 96, 96, 98],
+    occupiedRooms:   [1,  40, 91, 91, 80],
+    vacantRooms:     [7,   2,  5,  5, 18],
+    occupancyPercent:[13, 95, 95, 95, 82]
+  }
+]
+    },
+  {
+  meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS03'
+  },    
+        
+  records:[
+  {
+    buildings: ["3101", "3117", "3102", "3103", "3104", "3105", "3106", "3107", "3100"],
+    totalRooms:      [80, 56, 84, 84, 84, 90, 90, 38,  2],
+    occupiedRooms:   [72, 55, 84, 84, 82, 90, 90, 32,  2],
+    vacantRooms:     [ 8,  1,  0,  0,  2,  0,  0,  6,  0],
+    occupancyPercent:[90, 98, 100, 100, 98, 100, 100, 84, 100]
+  }
+]
+    },      
+  {
+  meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS01'
+  },    
+        
+  records:[
+  {
+    buildings: ["101", "102", "103"],
+    totalRooms:      [14, 112,  9],
+    occupiedRooms:   [11, 108,  3],
+    vacantRooms:     [ 3,   4,  6],
+    occupancyPercent:[79,  96, 33]
+  }
+]
+    },
+  {
+  meta: {
+    year: 2026,
+    month: "May ",
+    site: 'PRS1'
+  },    
+        
+  records:[
+  {
+    buildings: ["1101", "1102", "1103"],
+    totalRooms:      [20, 60, 7],
+    occupiedRooms:   [15, 60, 6],
+    vacantRooms:     [ 5,  0, 1],
+    occupancyPercent:[75, 100, 86]
+  }
+]
+    },
+  {
+  meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS05'
+  },    
+        
+  records:[
+  {
+    buildings: ["5100", "5101", "5102"],
+    totalRooms:      [16, 72, 7],
+    occupiedRooms:   [15, 72, 7],
+    vacantRooms:     [ 1,  0, 0],
+    occupancyPercent:[94, 100, 100]
+  }
+]
+    },   
+
+    
 ]

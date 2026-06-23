@@ -1362,4 +1362,207 @@ export default [
 ]
 
   },
+  {
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS10'
+  },
+
+  records: [
+  {
+    subjects: [
+      "A-Architectural",
+      "C-Civil",
+      "E-Electrical",
+      "F-FCM",
+      "H-HVAC",
+      "J-C3",
+      "M-Mechanical"
+    ],
+
+    scheduled:    [0, 15, 14, 0, 9, 19, 20],
+    accomplished: [0, 15, 14, 0, 9, 19, 20],
+    percentage:   [100, 100, 100, 100, 100, 100, 100],
+
+    completion_rate: "100%",
+
+    totals: {
+      scheduled:   "77",
+      accomplished: "77"
+    }
+  }
+]
+},
+  {
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS06'
+  },
+
+ records: [
+  {
+    subjects: [
+      "A-Architectural",
+      "C-Civil",
+      "E-Electrical",
+      "F-FCM",
+      "G-General",
+      "H-HVAC",
+      "J-C3",
+      "M-Mechanical"
+    ],
+
+    scheduled:    [0, 57, 16, 13, 0, 30, 20, 32],
+    accomplished: [0, 57, 16, 13, 0, 30, 20, 32],
+    percentage:   [100, 100, 100, 100, 100, 100, 100, 100],
+
+    completion_rate: "100%",
+
+    totals: {
+      scheduled:    "168",
+      accomplished: "168"
+    }
+  }
+]
+},
+  {
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS03'
+  },
+
+  records: [
+  {
+    subjects: [
+      "A-Architectural",
+      "C-Civil",
+      "E-Electrical",
+      "F-FCM",
+      "G-General",
+      "H-HVAC",
+      "J-C3",
+      "M-Mechanical"
+    ],
+
+    scheduled:    [4, 131, 84, 3, 0, 45, 88, 131],
+    accomplished: [4, 131, 84, 3, 0, 45, 88, 131],
+    percentage:   [100, 100, 100, 100, 100, 100, 100, 100],
+
+    completion_rate: "100%",
+
+    totals: {
+      scheduled:    "486",
+      accomplished: "486"
+    }
+  }
+]
+},
+  {
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS01'
+  },
+
+ records: [
+  {
+    subjects: [
+      "C-Civil",
+      "F-FCM",
+      "G-General Services",
+      "E-Electrical",
+      "H-HVAC",
+      "J-C3",
+      "M-Mechanical"
+    ],
+
+    scheduled:    [6, 2, 5, 19, 6, 3, 27],
+    accomplished: [6, 2, 5, 19, 6, 3, 27],
+    percentage:   [100, 100, 100, 100, 100, 100, 100],
+
+    completion_rate: "100%",
+
+    totals: {
+      scheduled:    "68",
+      accomplished: "68"
+    }
+  }
+]
+},
+  {
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PRS1'
+  },
+
+  records: [
+  {
+    subjects: [
+      "C-Civil",
+      "E-Electrical",
+      "H-HVAC",
+      "J-C3",
+      "M-Mechanical",
+      "A-Architectural",
+      "F-FCM"
+    ],
+
+    scheduled:    [14, 6, 22, 6, 22, 1, 1],
+    accomplished: [14, 6, 22, 6, 22, 1, 1],
+    percentage:   [100, 100, 100, 100, 100, 100, 100],
+
+    completion_rate: "100%",
+
+    totals: {
+      scheduled:    "72",
+      accomplished: "72"
+    }
+  }
+]
+},
+
+  {
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS05'
+  },
+
+  records: [
+  {
+    subjects: [
+      "A-Architectural",
+      "C-Civil",
+      "E-Electrical",
+      "F-FCM",
+      "H-HVAC",
+      "J-C3",
+      "M-Mechanical"
+    ],
+
+    scheduled:    [0, 12, 6, 5, 2, 1, 16],
+    accomplished: [0, 12, 6, 5, 2, 1, 16],
+    percentage:   [0, 100, 100, 100, 100, 100, 100],
+
+    completion_rate: "100%",
+
+    totals: {
+      scheduled:    "42",
+      accomplished: "42"
+    }
+  }
+]
+
+  },
+
 ]

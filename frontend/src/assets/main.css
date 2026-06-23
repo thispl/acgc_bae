@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Hide horizontal scrollbars globally for WebKit browsers (Chrome, Safari, TV browsers) */
+::-webkit-scrollbar:horizontal {
+  display: none;
+  height: 0px;
+}
+
+/* Helper class to hide scrollbars completely */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

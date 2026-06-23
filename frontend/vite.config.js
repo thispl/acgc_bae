@@ -1,21 +1,37 @@
-import { fileURLToPath, URL } from 'node:url'
-
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import vueDevTools from 'vite-plugin-vue-devtools'
+import path from 'path'
 
-// https://vite.dev/config/
-export default defineConfig({
-  server: {
-    port: 8000, // Change this to your desired port
-  },
-  plugins: [
-    vue(),
-    vueDevTools(),
-  ],
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+export default defineConfig(({ mode }) => {
+  return {
+    base:
+      mode === 'development'
+        ? '/'
+        : '/assets/dashboard/frontend/',
+
+    plugins: [
+      vue(),
+    ],
+    server: {
+      port: 8080,
+      proxy: {
+        '^/(api|app|assets|files)': {
+          target: "https://acgc.teamproit.com",
+          changeOrigin: true,
+          secure: false
+        },
+      },
     },
-  },
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src'),
+      },
+    },
+    build: {
+      outDir: `../dashboard/public/frontend`,
+      emptyOutDir: true,
+      target: 'es2015',
+    },
+
+  }
 })

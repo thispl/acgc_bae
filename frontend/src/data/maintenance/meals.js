@@ -879,5 +879,144 @@ export default [
 ]
 
 },
+{
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS10'
+  },
+    
+    records: [
+  {
+    meal: 'Breakfast',
+    count: 1414
+  },
+  {
+    meal: 'Lunch',
+    count: 1979
+  },
+  {
+    meal: 'Dinner',
+    count: 2764
+  }
+]
+},
+    {
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS06'
+  },
+    
+    records: [
+  {
+    meal: 'Breakfast',
+    count: 1894
+  },
+  {
+    meal: 'Lunch',
+    count: 2431
+  },
+  {
+    meal: 'Dinner',
+    count: 3166
+  }
+]
+},
+    {
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS03'
+  },
+    
+   records: [
+  {
+    meal: 'Breakfast',
+    count: 2327
+  },
+  {
+    meal: 'Lunch',
+    count: 3665
+  },
+  {
+    meal: 'Dinner',
+    count: 5572
+  }
+]
+},
+    {
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS01'
+  },
+    
+   records: [
+  {
+    meal: 'Breakfast',
+    count: 1177
+  },
+  {
+    meal: 'Lunch',
+    count: 1410
+  },
+  {
+    meal: 'Dinner',
+    count: 1565
+  }
+]
+},
+    {
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PRS1'
+  },
+    
+   records: [
+  {
+    meal: 'Breakfast',
+    count: 4059
+  },
+  {
+    meal: 'Lunch',
+    count: 4676
+  },
+  {
+    meal: 'Dinner',
+    count: 5418
+  }
+]
+},
+    {
+
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS05'
+  },
+    
+    records: [
+  {
+    meal: 'Breakfast',
+    count: 750
+  },
+  {
+    meal: 'Lunch',
+    count: 1133
+  },
+  {
+    meal: 'Dinner',
+    count: 1008
+  }
+]
+
+},
 
 ]

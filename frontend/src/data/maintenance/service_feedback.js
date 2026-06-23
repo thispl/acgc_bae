@@ -1381,7 +1381,7 @@ export default [
 
         meta: {
             year: 2026,
-            month: "February",
+            month: "March",
             site: 'PS05'
         },
 
@@ -1709,5 +1709,275 @@ export default [
 ]
 
 },
+{
 
+        meta: {
+            year: 2026,
+            month: "May",
+            site: 'PS10'
+        },
+
+        records: [
+    {
+        name: 'Employees Responsiveness',
+        data: [4.88, 5.00, 5.00, 4.86],
+    },
+    {
+        name: 'Front Desk Employee',
+        data: [4.88, 5.00, 4.88, 4.71],
+    },
+    {
+        name: 'Room Service',
+        data: [4.75, 5.00, 5.00, 5.00],
+    },
+    {
+        name: 'Employees Professionalism',
+        data: [4.88, 5.00, 4.88, 5.00],
+    },
+    {
+        name: 'Cleanliness of the Room',
+        color: '#9b5cf6',
+        data: [4.88, 5.00, 5.00, 5.00],
+    },
+    {
+        name: 'Taste of the food',
+        data: [4.75, 4.13, 4.00, 4.71],
+    },
+    {
+        name: 'Service',
+        data: [4.88, 4.50, 4.63, 4.71],
+    },
+]
+    },
+    // {
+
+    //     meta: {
+    //         year: 2026,
+    //         month: "May",
+    //         site: 'PS06'
+    //     },
+
+    //     records: [
+    //         {
+    //             name: 'Employees Responsiveness',
+    //             // color: '#9b5cf6',
+    //             data: [5, 5, 5, 4.83],
+    //         },
+    //         {
+    //             name: 'Front Desk Employee',
+    //             // color: '#9b5cf6',
+    //             data: [5, 4.83, 5, 4.83],
+    //         },
+    //         {
+    //             name: 'Room Service',
+    //             // color: '#9b5cf6',
+    //             data: [5, 5, 5, 4.83],
+    //         },
+    //         {
+    //             name: 'Employees Professionalism',
+    //             // color: '#9b5cf6',
+    //             data: [4.83, 5, 5, 4.83],
+    //         },
+    //         {
+    //             name: 'Cleanliness of the Room',
+    //             color: '#9b5cf6',
+    //             data: [4.83, 5, 4.83, 4.83],
+    //         },
+    //         {
+    //             name: 'Taste of the food',
+    //             // color: '#9b5cf6',
+    //             data: [4.50, 4.33, 4.67, 4.33],
+    //         },
+    //         {
+    //             name: 'Service',
+    //             // color: '#9b5cf6',
+    //             data: [4.83, 5, 4.67, 4.83],
+    //         },
+    //     ]
+
+    // },
+    {
+
+        meta: {
+            year: 2026,
+            month: "May",
+            site: 'PS03'
+        },
+
+        records: [
+    {
+        name: 'Employees Responsiveness',
+        data: [4.75, 5.00, 4.75, 4.50],
+    },
+    {
+        name: 'Front Desk Employee',
+        data: [4.75, 5.00, 4.75, 4.75],
+    },
+    {
+        name: 'Room Service',
+        data: [4.75, 5.00, 4.75, 4.25],
+    },
+    {
+        name: 'Employees Professionalism',
+        data: [4.75, 4.00, 4.50, 4.25],
+    },
+    {
+        name: 'Cleanliness of the Room',
+        color: '#9b5cf6',
+        data: [4.25, 4.00, 4.25, 4.25],
+    },
+    {
+        name: 'Taste of the food',
+        data: [4.25, 4.00, 4.25, 4.00],
+    },
+    {
+        name: 'Service',
+        data: [4.50, 5.00, 4.75, 4.00],
+    },
+]
+
+    },
+    {
+
+        meta: {
+            year: 2026,
+            month: "May",
+            site: 'PS01'
+        },
+
+        records: [
+            {
+                name: 'Employees Responsiveness',
+                // color: '#9b5cf6',
+                data: [5, 5, 5, 5],
+            },
+            {
+                name: 'Front Desk Employee',
+                // color: '#9b5cf6',
+                data: [5, 5, 5, 5],
+            },
+            {
+                name: 'Room Service',
+                // color: '#9b5cf6',
+                data: [5, 5, 5, 5],
+            },
+            {
+                name: 'Employees Professionalism',
+                // color: '#9b5cf6',
+                data: [5, 5, 5, 5],
+            },
+            {
+                name: 'Cleanliness of the Room',
+                color: '#9b5cf6',
+                data: [5, 5, 5, 5],
+            },
+            {
+                name: 'Taste of the food',
+                // color: '#9b5cf6',
+                data: [4, 5, 5, 5],
+            },
+            {
+                name: 'Service',
+                // color: '#9b5cf6',
+                data: [5, 5, 5, 5],
+            },
+        ]
+
+    },
+
+
+    {
+
+        meta: {
+            year: 2026,
+            month: "May",
+            site: 'PRS1'
+        },
+
+        records: [
+            {
+                name: 'Employees Responsiveness',
+                // color: '#9b5cf6',
+                data: [5, 5, 5, 5],
+            },
+            {
+                name: 'Front Desk Employee',
+                // color: '#9b5cf6',
+                data:[5, 5, 5, 5],
+            },
+            {
+                name: 'Room Service',
+                // color: '#9b5cf6',
+                data: [5, 5, 5, 5],
+            },
+            {
+                name: 'Employees Professionalism',
+                // color: '#9b5cf6',
+                data: [5, 5, 5, 5],
+            },
+            {
+                name: 'Cleanliness of the Room',
+                color: '#9b5cf6',
+                data: [5, 4, 5, 5],
+            },
+            {
+                name: 'Taste of the food',
+                // color: '#9b5cf6',
+                data: [5, 3, 5, 4],
+            },
+            {
+                name: 'Service',
+                // color: '#9b5cf6',
+                data:[5, 5, 5, 4],
+            },
+        ]
+
+    },
+     {
+    
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS05'
+  },    
+        
+     records:[   
+    {
+        name: 'Employees Responsiveness',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Front Desk Employee',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Room Service',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Employees Professionalism',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Cleanliness of the Room',
+        color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Taste of the food',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+    {
+        name: 'Service',
+        // color: '#9b5cf6',
+        data: [5, 5, 5, 5],
+    },
+]
+
+},
 ]

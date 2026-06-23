@@ -1487,5 +1487,219 @@ export default [
   }
 }]
   },
+{
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS10'
+  }, 
+
+ records: [{
+  categories: [
+    "Facility Manager",
+    "Mechanical Supervisor",
+    "HVAC Supervisor",
+    "Electrical Supervisor",
+    "C3 Supervisor",
+    "Civil Supervisor",
+    "Housekeeping Supervisor",
+    "Others"
+  ],
+
+  series: [
+    {
+      name: "Indicative",
+      data: [1, 1, 1, 1, 1, 1, 2, 92]
+    },
+    {
+      name: "Actual",
+      data: [1, 1, 0, 1, 1, 1, 2, 94]
+    }
+  ],
+
+  totals: {
+    indicative: 100,
+    actual:     101
+  }
+}]
+
+},
+  {
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS06'
+  }, 
+
+  records: [{
+  categories: [
+    "Facility Manager",
+    "Mechanical Supervisor / MEP",
+    "Electrical Supervisor / MEP",
+    "HVAC Supervisor",
+    "C3 Supervisor",
+    "Civil Supervisor",
+    "Housekeeping Supervisor",
+    "Others"
+  ],
+
+  series: [
+    {
+      name: "Indicative",
+      data: [1, 1, 1, 1, 1, 1, 2, 98]
+    },
+    {
+      name: "Actual",
+      data: [1, 1, 1, 1, 1, 0, 2, 95]
+    }
+  ],
+
+  totals: {
+    indicative: 106,
+    actual:     102
+  }
+}]
+
+},
+  {
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS03'
+  }, 
+
+ records: [{
+  categories: [
+    "Facility Manager",
+    "Mechanical Supervisor",
+    "HVAC Supervisor",
+    "Electrical Supervisor",
+    "C3 Supervisor",
+    "Civil Supervisor",
+    "Housekeeping Supervisor",
+    "Others"
+  ],
+
+  series: [
+    {
+      name: "Indicative",
+      data: [1, 1, 1, 1, 1, 1, 2, 148]
+    },
+    {
+      name: "Actual",
+      data: [1, 1, 1, 1, 1, 1, 2, 142]
+    }
+  ],
+
+  totals: {
+    indicative: 156,
+    actual:     150
+  }
+}]
+
+},
+  {
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS01'
+  }, 
+
+ records: [{
+  categories: [
+    "Facility Manager",
+    "Maintenance Supervisor",
+    "Housekeeping Supervisor",
+    "Others"
+  ],
+
+  series: [
+    {
+      name: "Indicative",
+      data: [1, 1, 1, 55]
+    },
+    {
+      name: "Actual",
+      data: [1, 1, 2, 55]
+    }
+  ],
+
+  totals: {
+    indicative: 58,
+    actual:     59
+  }
+}]
+},
+  {
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PRS1'
+  }, 
+
+ records: [{
+  categories: [
+    "Facility Manager",
+    "Mechanical Supervisor",
+    "Housekeeping Supervisor",
+    "Others"
+  ],
+
+  series: [
+    {
+      name: "Indicative",
+      data: [1, 1, 1, 54]
+    },
+    {
+      name: "Actual",
+      data: [1, 1, 1, 51]
+    }
+  ],
+
+  totals: {
+    indicative: 57,
+    actual:     54
+  }
+}]
+
+},
+  {
+
+   meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS05'
+  }, 
+
+records: [{
+  categories: [
+    "Facility Manager",
+    "Maintenance Coordinator/ Supervisor",
+    "Housekeeping Supervisor",
+    "Others"
+  ],
+
+  series: [
+    {
+      name: "Indicative",
+      data: [1, 1, 1, 54]
+    },
+    {
+      name: "Actual",
+      data: [1, 1, 1, 53]
+    }
+  ],
+
+  totals: {
+    indicative: 57,
+    actual:     56
+  }
+}]
+  },
 
 ]

@@ -722,6 +722,139 @@ indicative: [9, 17, 31],
 actual: [9, 17, 29]
   }]
 },
+{
+
+    
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS10'
+  }, 
+
+    records: [
+  {
+    functions: [
+      "Site Management Staff",
+      "MEP Technical Staff",
+      "Housekeeping and Recreational Service Staff"
+    ],
+
+    indicative: [17, 32, 51],
+    actual:     [19, 29, 53]
+  }
+]
+},
+  {
+
+    
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS06'
+  }, 
+
+  records: [
+  {
+    functions: [
+      "Site Management Staff",
+      "MEP Technical Staff",
+      "Housekeeping and Recreational Service Staff"
+    ],
+
+    indicative: [16, 30, 60],
+    actual:     [16, 28, 58]
+  }
+]
+},
+  {
+
+    
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS03'
+  }, 
+
+   records: [
+  {
+    functions: [
+      "Site Management Staff",
+      "MEP Technical Staff",
+      "Housekeeping and Recreational Service Staff"
+    ],
+
+    indicative: [21, 42, 95],
+    actual:     [21, 43, 90]
+  }
+]
+},
+ 
+  {
+
+    
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS01'
+  }, 
+
+    records: [
+  {
+    functions: [
+      "Site Management Staff",
+      "MEP Technical Staff",
+      "Housekeeping and Recreational Service Staff"
+    ],
+
+    indicative: [9, 19, 30],
+    actual:     [10, 18, 31]
+  }
+]
+},
+  {
+
+    
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PRS1'
+  }, 
+
+    records: [
+  {
+    functions: [
+      "Site Management Staff",
+      "MEP Technical Staff",
+      "Housekeeping and Recreational Service Staff"
+    ],
+
+    indicative: [10, 17, 30],
+    actual:     [10, 16, 28]
+  }
+]
+},
+  {
+
+    
+    meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS05'
+  }, 
+
+   records: [
+  {
+    functions: [
+      "Site Management Staff",
+      "MEP Technical Staff",
+      "Housekeeping and Recreational Service Staff"
+    ],
+
+    indicative: [9, 17, 31],
+    actual:     [9, 17, 28]
+  }
+]
+},
 
 
 ]

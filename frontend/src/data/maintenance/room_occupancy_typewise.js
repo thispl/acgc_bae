@@ -506,5 +506,86 @@ export default [
   { category: "TYPE - 4", total: 7, occupied: 7, vacant: 0, occupancy: 100 }
 ]
   },
+{
+     meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS10'
+  },    
+   records:[
+  { category: "TYPE - 1",     total: 8,   occupied: 5,   vacant: 3,  occupancy: 63  },
+  { category: "TYPE - 2",     total: 32,  occupied: 30,  vacant: 2,  occupancy: 94  },
+  { category: "TYPE - 3",     total: 176, occupied: 170, vacant: 6,  occupancy: 97  },
+  { category: "TYPE - 4",     total: 28,  occupied: 25,  vacant: 3,  occupancy: 89  },
+  { category: "Nurse Room",   total: 1,   occupied: 1,   vacant: 0,  occupancy: 100 },
+  { category: "Driver Room",  total: 1,   occupied: 1,   vacant: 0,  occupancy: 100 }
+]
+  },
+  {
+     meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS06'
+  },    
+   records:[
+  { category: "TYPE - 1",    total: 8,   occupied: 1,  vacant: 7,  occupancy: 13  },
+  { category: "TYPE - 2",    total: 42,  occupied: 40, vacant: 2,  occupancy: 95  },
+  { category: "TYPE - 3-1",  total: 96,  occupied: 91, vacant: 5,  occupancy: 95  },
+  { category: "TYPE - 3-2",  total: 96,  occupied: 91, vacant: 5,  occupancy: 95  },
+  { category: "TYPE - 4",    total: 28,  occupied: 28, vacant: 0,  occupancy: 100 },
+  { category: "6000 (C.C)",  total: 2,   occupied: 2,  vacant: 0,  occupancy: 100 }
+]
+  },
+  {
+     meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS03'
+  },    
+   records:[
+  { category: "TYPE - 1",   total: 16,  occupied: 11,  vacant: 5,  occupancy: 69  },
+  { category: "TYPE - 2",   total: 120, occupied: 116, vacant: 4,  occupancy: 97  },
+  { category: "TYPE - 3",   total: 432, occupied: 430, vacant: 2,  occupancy: 100 },
+  { category: "TYPE - 4",   total: 38,  occupied: 32,  vacant: 6,  occupancy: 84  },
+  { category: "Nurse Room", total: 2,   occupied: 2,   vacant: 0,  occupancy: 100 }
+]
+  },
+  {
+     meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS01'
+  },    
+   records:[
+  { category: "TYPE - 1 & 2", total: 14,  occupied: 11,  vacant: 3,  occupancy: 79 },
+  { category: "TYPE - 3",     total: 112, occupied: 108, vacant: 4,  occupancy: 96 },
+  { category: "TYPE - 4",     total: 9,   occupied: 3,   vacant: 6,  occupancy: 33 }
+]
+  },
+  {
+     meta: {
+    year: 2026,
+    month: "May",
+    site: 'PRS1'
+  },    
+   records:[
+  { category: "TYPE - 1", total: 2,  occupied: 0,  vacant: 2,  occupancy: 0   },
+  { category: "TYPE - 2", total: 18, occupied: 15, vacant: 3,  occupancy: 83  },
+  { category: "TYPE - 3", total: 60, occupied: 60, vacant: 0,  occupancy: 100 },
+  { category: "TYPE - 4", total: 7,  occupied: 6,  vacant: 1,  occupancy: 86  }
+]
+  },
+  {
+     meta: {
+    year: 2026,
+    month: "May",
+    site: 'PS05'
+  },    
+   records:[
+  { category: "TYPE - 2", total: 16, occupied: 15, vacant: 1,  occupancy: 94  },
+  { category: "TYPE - 3", total: 72, occupied: 72, vacant: 0,  occupancy: 100 },
+  { category: "TYPE - 4", total: 7,  occupied: 7,  vacant: 0,  occupancy: 100 }
+]
+  },
 
 ];
