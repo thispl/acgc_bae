@@ -1,6 +1,6 @@
 <template>
 	<!-- Tabs Section -->
-	<div class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-auto items-center">
+	<div class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-hidden items-center">
 		<button
 			@click="activeTab='Organisation Chart'"
 			class="font-semibold w-full text-sm text-center h-8 pt-0.5 px-2"
@@ -258,7 +258,7 @@
 		</div>
 
 		<!-- Safety  -->
-		<div v-if="activeTab === 'safety'" class="bg-white pt-5 w-full">
+		<div v-if="activeTab === 'Safety'" class="bg-white pt-5 w-full">
 			<div
 				v-if="safetyEnvironmentDataFiltered.length"
 				class="ml-[10px] pb-[20px] w-full flex gap-10"
@@ -438,8 +438,10 @@ import OrganisationChartData from "@/data/maintenance/organisation_chart.js";
 import TotalActivitiesData from "@/data/maintenance/total_activities_done";
 import organisationChartLink from "@/data/maintenance/organisation_chart_links.js";
 
+import autoScrollMixin from "@/mixins/autoScrollMixin";
+
 export default {
-	
+	mixins: [autoScrollMixin],
   props: {
     isAutoRotateStopped: Boolean
   },
@@ -599,56 +601,6 @@ export default {
 			childIntervalId: null,
 			resumeTimeoutId: null,
 		};
-	},
-	mounted() {
-  this.startChildRotation();
-},
-
-watch: {
-  isAutoRotateStopped(newVal) {
-    if (newVal) {
-      clearInterval(this.childIntervalId);
-    } else {
-      this.startChildRotation();
-    }
-  },
-
-  '$route.path'() {
-    this.childTabIndex = 0;
-    this.activeTab = this.tabs[0];
-
-    if (!this.isAutoRotateStopped) {
-      this.startChildRotation();
-    } else {
-      clearInterval(this.childIntervalId);
-    }
-  }
-},
-beforeUnmount() {
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-},
-
-  methods: {
-startChildRotation() {
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-
-  if (this.isAutoRotateStopped) return;
-
-  this.childIntervalId = setInterval(() => {
-    this.childTabIndex++;
-
-    if (this.childTabIndex >= this.tabs.length) {
-      this.childTabIndex = 0;
-      this.$emit('child-cycle-complete');
-    }
-
-    this.activeTab = this.tabs[this.childTabIndex];
-  }, 5000);
-},
-  }
+	}
 };
 </script>

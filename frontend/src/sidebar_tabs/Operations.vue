@@ -1,6 +1,6 @@
 <template>
   <!-- Tabs -->
-  <div class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-auto items-center">
+  <div class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-hidden items-center">
     <button @click="activeTab='Energy'" class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
       :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Energy' }">
       Energy
@@ -281,9 +281,10 @@ import garbageCollectionData from '@/data/maintenance/garbage_collection.js';
 import gasolineConsumption from '@/data/maintenance/gasoline_consumption.js';
 import waterConsumption from '@/data/maintenance/water_consumption.js';
 import electricityConsumption from '@/data/maintenance/electricity_consumption'; 
+import autoScrollMixin from '@/mixins/autoScrollMixin';
 
 export default {
-    
+  mixins: [autoScrollMixin],
   props: {
     isAutoRotateStopped: Boolean
   },
@@ -349,55 +350,5 @@ export default {
    },
 
    
-  mounted() {
-  this.startChildRotation();
-},
-
-watch: {
-  isAutoRotateStopped(newVal) {
-    if (newVal) {
-      clearInterval(this.childIntervalId);
-    } else {
-      this.startChildRotation();
-    }
-  },
-
-  '$route.path'() {
-    this.childTabIndex = 0;
-    this.activeTab = this.tabs[0];
-
-    if (!this.isAutoRotateStopped) {
-      this.startChildRotation();
-    } else {
-      clearInterval(this.childIntervalId);
-    }
-  }
-},
-beforeUnmount() {
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-},
-
-  methods: {
-startChildRotation() {
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-
-  if (this.isAutoRotateStopped) return;
-
-  this.childIntervalId = setInterval(() => {
-    this.childTabIndex++;
-
-    if (this.childTabIndex >= this.tabs.length) {
-      this.childTabIndex = 0;
-      this.$emit('child-cycle-complete');
-    }
-
-    this.activeTab = this.tabs[this.childTabIndex];
-  }, 5000);
-}
-  }
 };
 </script>

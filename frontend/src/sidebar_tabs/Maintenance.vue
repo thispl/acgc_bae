@@ -1,7 +1,7 @@
 <template>
   <!-- Tabs -->
   <div
-    class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-auto items-center"
+    class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-hidden items-center"
   >
     <button
       @click="activeTab='Overall Scheduled vs Accomplished'"
@@ -549,12 +549,13 @@
     import roomOccupancyTypeData from '@/data/maintenance/room_occupancy_typewise.js';
     import OverallMonthAll from '@/data/maintenance/monthwise_overall_pmi_cm_wr.js';
     import OrganisationChartData from '@/data/maintenance/organisation_chart.js';
+    import autoScrollMixin from '@/mixins/autoScrollMixin';
 
 
 
 
     export default {
-      
+      mixins: [autoScrollMixin],
   props: {
     isAutoRotateStopped: Boolean
   },
@@ -751,56 +752,6 @@ overallOccupancytypewise() {
 },
 
 
-mounted() {
-  this.startChildRotation();
-},
-
-watch: {
-  isAutoRotateStopped(newVal) {
-    if (newVal) {
-      clearInterval(this.childIntervalId);
-    } else {
-      this.startChildRotation();
-    }
-  },
-
-  '$route.path'() {
-    this.childTabIndex = 0;
-    this.activeTab = this.tabs[0];
-
-    if (!this.isAutoRotateStopped) {
-      this.startChildRotation();
-    } else {
-      clearInterval(this.childIntervalId);
-    }
-  }
-},
-beforeUnmount() {
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-},
-methods: {
-startChildRotation() {
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-
-  if (this.isAutoRotateStopped) return;
-
-  this.childIntervalId = setInterval(() => {
-    this.childTabIndex++;
-
-    if (this.childTabIndex >= this.tabs.length) {
-      this.childTabIndex = 0;
-      this.$emit('child-cycle-complete');
-    }
-
-    this.activeTab = this.tabs[this.childTabIndex];
-  }, 5000);
-},
-
-},
     };
 </script>
 

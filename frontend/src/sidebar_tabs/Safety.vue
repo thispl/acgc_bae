@@ -1,6 +1,6 @@
 <template>
   <!-- Tabs -->
-  <div class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-auto items-center">
+  <div class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-hidden items-center">
     <button @click="activeTab='Summary'" class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
       :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Summary' }">
       Summary
@@ -204,11 +204,12 @@ import CountCard from '@/components/CountCard.vue';
 import safetyTrainingOnData from '@/data/maintenance/safety_training_on.js';
 import safetyData from '@/data/maintenance/safety.js';
 import safetyEnvironmentData from '@/data/maintenance/safety_and_environment.js';
+import autoScrollMixin from '@/mixins/autoScrollMixin';
 
 
 
 export default {
-  
+  mixins: [autoScrollMixin],
   props: {
     isAutoRotateStopped: Boolean
   },
@@ -262,55 +263,5 @@ export default {
 
   },
 
-  mounted() {
-  this.startChildRotation();
-},
-
-watch: {
-  isAutoRotateStopped(newVal) {
-    if (newVal) {
-      clearInterval(this.childIntervalId);
-    } else {
-      this.startChildRotation();
-    }
-  },
-
-  '$route.path'() {
-    this.childTabIndex = 0;
-    this.activeTab = this.tabs[0];
-
-    if (!this.isAutoRotateStopped) {
-      this.startChildRotation();
-    } else {
-      clearInterval(this.childIntervalId);
-    }
-  }
-},
-beforeUnmount() {
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-},
-
-  methods: {
-startChildRotation() {
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-
-  if (this.isAutoRotateStopped) return;
-
-  this.childIntervalId = setInterval(() => {
-    this.childTabIndex++;
-
-    if (this.childTabIndex >= this.tabs.length) {
-      this.childTabIndex = 0;
-      this.$emit('child-cycle-complete');
-    }
-
-    this.activeTab = this.tabs[this.childTabIndex];
-  }, 5000);
-}
-  }
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <!-- Tabs -->
   <div
-    class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-auto items-center"
+    class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-hidden items-center"
   >
     <button
       @click="activeTab='Saudization'"
@@ -73,7 +73,6 @@
 
     <div v-if="activeTab =='Management KPI'" style="background-color: white">
       <!-- KPI Performance Measure -->
-
       <div>
         <div>
           <h1 class="text-3xl font-semibold text-center mb-3 mt-5 pt-5">
@@ -190,10 +189,12 @@ import manpowerSaudiNationalData from '@/data/maintenance/manpower_saudi_nationa
 import kpiPerformanceMeasure from '@/data/maintenance/kpi_performance_measure.js';
 import manpowerSummaryData from '@/data/maintenance/manpower_summary.js';
 import manpowerDetailsData from '@/data/maintenance/manpower_details.js';
+import autoScrollMixin from '@/mixins/autoScrollMixin';
 
 
 
 export default {
+  mixins: [autoScrollMixin],
   props: {
     isAutoRotateStopped: Boolean
   },
@@ -250,56 +251,5 @@ export default {
 
   },
 
-  mounted() {
-  this.startChildRotation();
-},
-
-watch: {
-  isAutoRotateStopped(newVal) {
-    if (newVal) {
-      clearInterval(this.childIntervalId);
-    } else {
-      this.startChildRotation();
-    }
-  },
-
-  '$route.path'() {
-    this.childTabIndex = 0;
-    this.activeTab = this.tabs[0];
-
-    if (!this.isAutoRotateStopped) {
-      this.startChildRotation();
-    } else {
-      clearInterval(this.childIntervalId);
-    }
-  }
-},
-
-beforeUnmount() {
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-},
-
-  methods: {
-    startChildRotation() {
-  if (this.childIntervalId) {
-    clearInterval(this.childIntervalId);
-  }
-
-  if (this.isAutoRotateStopped) return;
-
-  this.childIntervalId = setInterval(() => {
-    this.childTabIndex++;
-
-    if (this.childTabIndex >= this.tabs.length) {
-      this.childTabIndex = 0;
-      this.$emit('child-cycle-complete');
-    }
-
-    this.activeTab = this.tabs[this.childTabIndex];
-  }, 5000);
-}
-  }
 };
 </script>
