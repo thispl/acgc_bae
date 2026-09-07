@@ -212,7 +212,7 @@ export default {
         { id: 2, name: "Amar" },
       ],
       sites: [
-        { id: "PS10", name: "PS10", description: "SFA Dahra" },
+        { id: "PS10", name: "PS10", description: "SFA Dhahran" },
       //   { id: "PS06", name: "PS06", description: "7005 - East West Residential Compound for PS06" },
       //   { id: "PS03", name: "PS03", description: "7003 - East West Residential Compound for PS03" },
       //   { id: "PS01", name: "PS01", description: "7002 - East West Residential Compound for PS01" },
