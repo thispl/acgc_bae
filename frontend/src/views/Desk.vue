@@ -6,8 +6,7 @@
         <img src="../assets/icons/ACGC LOGO FULL NAME.png" class="h-10 mt-4" />
         <div class="w-full">
           <h1 class="font-semibold text-2xl ml-[20px] mt-[5px] w-full text-center">
-            Monthly Progress Observation and Analysis - {{ this.selectedMonth }}
-            {{this.selectedYear}}
+            Monthly Progress Observation and Analysis<br />{{ this.selectedMonth }} {{ this.selectedYear }}
           </h1>
           <h2 v-if="selectedSiteDescription" class="font-semibold text-xl ml-[20px] mt-[5px] w-full text-center opacity-50">
             {{ this.selectedSiteDescription }}
