@@ -5,8 +5,8 @@
       <div class="flex flex-row w-full">
         <img src="../assets/icons/ACGC LOGO FULL NAME.png" class="h-10 mt-4" />
         <div class="w-full">
-          <h1 class="font-semibold text-2xl ml-[20px] mt-[5px] w-full text-center">
-            Monthly Progress Observation and Analysis<br />{{ this.selectedMonth }} {{ this.selectedYear }}
+          <h1 class="font-semibold text-[23px] ml-[20px] mt-[5px] w-full text-center">
+            Monthly Progress Observation and Analysis - {{ this.selectedMonth }} {{ this.selectedYear }}
           </h1>
           <h2 v-if="selectedSiteDescription" class="font-semibold text-xl ml-[20px] mt-[5px] w-full text-center opacity-50">
             {{ this.selectedSiteDescription }}
@@ -212,7 +212,7 @@ export default {
         { id: 2, name: "Amar" },
       ],
       sites: [
-        { id: "PS10", name: "PS10", description: "" },
+        { id: "PS10", name: "PS10", description: "SFA Dahra" },
       //   { id: "PS06", name: "PS06", description: "7005 - East West Residential Compound for PS06" },
       //   { id: "PS03", name: "PS03", description: "7003 - East West Residential Compound for PS03" },
       //   { id: "PS01", name: "PS01", description: "7002 - East West Residential Compound for PS01" },
