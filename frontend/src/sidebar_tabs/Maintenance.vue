@@ -10,22 +10,6 @@
     >
       PM / CM / WR
     </button>
-    <p>|</p>
-    <button
-      @click="activeTab='Catering and Laundry Services'"
-      class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
-      :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Catering and Laundry Services' }"
-    >
-      Catering and Laundry Services
-    </button>
-    <p>|</p>
-    <button
-      @click="activeTab='Room Occupancy'"
-      class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
-      :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Room Occupancy' }"
-    >
-      Room Occupancy
-    </button>
   </div>
 
   <!-- Charts -->
@@ -641,9 +625,7 @@
                 OverallMonthAll,
                 OrganisationChartData,
                 tabs: [
-                    'Overall Scheduled vs Accomplished',
-                    'Catering and Laundry Services',
-                    'Room Occupancy'
+                    'Overall Scheduled vs Accomplished'
                 ],
                 childTabIndex: 0,
                 childIntervalId: null,

@@ -1,19 +1,9 @@
 <template>
   <!-- Tabs -->
   <div class="bg-white flex flex-nowrap gap-2 justify-center overflow-x-hidden items-center">
-    <button @click="activeTab='Summary'" class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
-      :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Summary' }">
-      Summary
-    </button>
-    <p>|</p>
     <button @click="activeTab='Safety'" class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
       :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Safety' }">
       Safety
-    </button>
-    <p>|</p>
-    <button @click="activeTab='Safety Training'" class="font-semibold w-full text-sm text-center h-8 pt-1 px-2"
-      :class="{'border-b-2 border-b-[#fba800] bg-[#fefdec]': activeTab === 'Safety Training' }">
-      Safety Training
     </button>
   </div>
   <!-- Charts -->
@@ -237,14 +227,12 @@ export default {
      },
   data() {
     return {
-      activeTab: 'Summary',
+      activeTab: 'Safety',
       safetyTrainingOnData,
       safetyData,
       safetyEnvironmentData,
       tabs: [
-          'Summary',
-          'Safety',
-          'Safety Training'
+          'Safety'
       ],
       childTabIndex: 0,
       childIntervalId: null,

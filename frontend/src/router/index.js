@@ -21,12 +21,11 @@ const routes = [
     children: [
       {
         path: '',
-        redirect: 'management'
+        redirect: 'maintenance'
       },
       {
         path: 'management',
-        name: 'management',
-        component: Management,
+        redirect: 'maintenance'
       },
       {
         path: 'maintenance',
@@ -55,8 +54,7 @@ const routes = [
       },
       {
         path: 'operations',
-        name: 'operations',
-        component: Operations,
+        redirect: 'maintenance'
       }
     ]
   }
