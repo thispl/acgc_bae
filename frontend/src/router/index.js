@@ -63,7 +63,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/dashboard'),
+  history: createWebHistory('/bae'),
   routes,
 })
 

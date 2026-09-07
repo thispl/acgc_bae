@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
     base:
       mode === 'development'
         ? '/'
-        : '/assets/dashboard/frontend/',
+        : '/assets/acgc_bae/frontend/',
 
     plugins: [
       vue(),
@@ -28,7 +28,7 @@ export default defineConfig(({ mode }) => {
       },
     },
     build: {
-      outDir: `../dashboard/public/frontend`,
+      outDir: `../acgc_bae/public/frontend`,
       emptyOutDir: true,
       target: 'es2015',
     },

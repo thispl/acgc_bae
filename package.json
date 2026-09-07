@@ -1,5 +1,5 @@
 {
-  "name": "dashboard",
+  "name": "acgc_bae",
   "version": "1.0.0",
   "description": "Standard dashboards with Vue JS",
   "main": "index.js",

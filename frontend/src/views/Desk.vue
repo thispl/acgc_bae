@@ -9,7 +9,7 @@
             Monthly Progress Observation and Analysis - {{ this.selectedMonth }}
             {{this.selectedYear}}
           </h1>
-          <h2 class="font-semibold text-xl ml-[20px] mt-[5px] w-full text-center opacity-50">
+          <h2 v-if="selectedSiteDescription" class="font-semibold text-xl ml-[20px] mt-[5px] w-full text-center opacity-50">
             {{ this.selectedSiteDescription }}
           </h2>
         </div>
@@ -74,8 +74,8 @@
           </option>
         </select>
 
-        <!-- Site -->
-        <select
+        <!-- Site (Hidden) -->
+        <!-- <select
           v-model="selectedSite"
           class="border border-gray-300 rounded-md px-2 py-1 text-sm w-20"
         >
@@ -83,7 +83,7 @@
           <option v-for="site in sites" :key="site.id" :value="site.name">
             {{ site.name }}
           </option>
-        </select>
+        </select> -->
 
         <!-- Employee -->
         <!-- <select v-model="selectedEmployee" class="border border-gray-300 rounded-md px-3 py-1 text-sm w-20">
@@ -292,14 +292,12 @@ export default {
         { id: 2, name: "Amar" },
       ],
       sites: [
-        // { id: "EWRC", name: "EWRC" },
-        { id: "PS10", name: "PS10", description: "7006 - East West Residential Compound for PS10" },
+        { id: "PS10", name: "PS10", description: "" },
         { id: "PS06", name: "PS06", description: "7005 - East West Residential Compound for PS06" },
         { id: "PS03", name: "PS03", description: "7003 - East West Residential Compound for PS03" },
         { id: "PS01", name: "PS01", description: "7002 - East West Residential Compound for PS01" },
         { id: "PRS1", name: "PRS1", description: "7007 - East West Residential Compound for PRS1" },
         { id: "PS05", name: "PS05", description: "7004 - East West Residential Compound for PS05" },
-
       ],
 
       months:[

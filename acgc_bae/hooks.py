@@ -1,5 +1,5 @@
-app_name = "dashboard"
-app_title = "Dashboard"
+app_name = "acgc_bae"
+app_title = "ACGC BAE"
 app_publisher = "Amar Karthick P"
 app_description = "Standard dashboards with Vue JS"
 app_email = "amar.p@groupteampro.com"
@@ -13,11 +13,11 @@ app_license = "mit"
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
-# 		"name": "dashboard",
-# 		"logo": "/assets/dashboard/logo.png",
-# 		"title": "Dashboard",
-# 		"route": "/dashboard",
-# 		"has_permission": "dashboard.api.permission.has_app_permission"
+# 		"name": "acgc_bae",
+# 		"logo": "/assets/acgc_bae/logo.png",
+# 		"title": "ACGC BAE",
+# 		"route": "/acgc_bae",
+# 		"has_permission": "acgc_bae.api.permission.has_app_permission"
 # 	}
 # ]
 
@@ -25,15 +25,15 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/dashboard/css/dashboard.css"
-# app_include_js = "/assets/dashboard/js/dashboard.js"
+# app_include_css = "/assets/acgc_bae/css/acgc_bae.css"
+# app_include_js = "/assets/acgc_bae/js/acgc_bae.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/dashboard/css/dashboard.css"
-# web_include_js = "/assets/dashboard/js/dashboard.js"
+# web_include_css = "/assets/acgc_bae/css/acgc_bae.css"
+# web_include_js = "/assets/acgc_bae/js/acgc_bae.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "dashboard/public/scss/website"
+# website_theme_scss = "acgc_bae/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -51,7 +51,7 @@ app_license = "mit"
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "dashboard/public/icons.svg"
+# app_include_icons = "acgc_bae/public/icons.svg"
 
 # Home Pages
 # ----------
@@ -64,6 +64,12 @@ app_license = "mit"
 # 	"Role": "home_page"
 # }
 
+website_route_rules = [
+	{"from_route": "/acgc_bae/<path:app_path>", "to_route": "acgc_bae"},
+]
+
+
+
 # Generators
 # ----------
 
@@ -75,43 +81,43 @@ app_license = "mit"
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "dashboard.utils.jinja_methods",
-# 	"filters": "dashboard.utils.jinja_filters"
+# 	"methods": "acgc_bae.utils.jinja_methods",
+# 	"filters": "acgc_bae.utils.jinja_filters"
 # }
 
 # Installation
 # ------------
 
-# before_install = "dashboard.install.before_install"
-# after_install = "dashboard.install.after_install"
+# before_install = "acgc_bae.install.before_install"
+# after_install = "acgc_bae.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "dashboard.uninstall.before_uninstall"
-# after_uninstall = "dashboard.uninstall.after_uninstall"
+# before_uninstall = "acgc_bae.uninstall.before_uninstall"
+# after_uninstall = "acgc_bae.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "dashboard.utils.before_app_install"
-# after_app_install = "dashboard.utils.after_app_install"
+# before_app_install = "acgc_bae.utils.before_app_install"
+# after_app_install = "acgc_bae.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "dashboard.utils.before_app_uninstall"
-# after_app_uninstall = "dashboard.utils.after_app_uninstall"
+# before_app_uninstall = "acgc_bae.utils.before_app_uninstall"
+# after_app_uninstall = "acgc_bae.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "dashboard.notifications.get_notification_config"
+# notification_config = "acgc_bae.notifications.get_notification_config"
 
 # Permissions
 # -----------
