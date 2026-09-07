@@ -66,6 +66,7 @@ app_license = "mit"
 
 website_route_rules = [
 	{"from_route": "/acgc_bae/<path:app_path>", "to_route": "acgc_bae"},
+	{"from_route": "/bae/<path:app_path>", "to_route": "bae"},
 ]
 
 
