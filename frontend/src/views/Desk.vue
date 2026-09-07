@@ -293,12 +293,12 @@ export default {
       ],
       sites: [
         { id: "PS10", name: "PS10", description: "" },
-        { id: "PS06", name: "PS06", description: "7005 - East West Residential Compound for PS06" },
-        { id: "PS03", name: "PS03", description: "7003 - East West Residential Compound for PS03" },
-        { id: "PS01", name: "PS01", description: "7002 - East West Residential Compound for PS01" },
-        { id: "PRS1", name: "PRS1", description: "7007 - East West Residential Compound for PRS1" },
-        { id: "PS05", name: "PS05", description: "7004 - East West Residential Compound for PS05" },
-      ],
+      //   { id: "PS06", name: "PS06", description: "7005 - East West Residential Compound for PS06" },
+      //   { id: "PS03", name: "PS03", description: "7003 - East West Residential Compound for PS03" },
+      //   { id: "PS01", name: "PS01", description: "7002 - East West Residential Compound for PS01" },
+      //   { id: "PRS1", name: "PRS1", description: "7007 - East West Residential Compound for PRS1" },
+      //   { id: "PS05", name: "PS05", description: "7004 - East West Residential Compound for PS05" },
+       ],
 
       months:[
         {id:1 , name:"January"},
